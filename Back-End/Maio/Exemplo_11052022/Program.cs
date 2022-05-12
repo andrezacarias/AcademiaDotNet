@@ -24,37 +24,37 @@
 
 //Exemplo 4
 
-int inicio, fim, i;
+//int inicio, fim, i;
 
-Console.WriteLine("Digite o início e o fim: ");
-inicio = int.Parse(Console.ReadLine());
-fim = int.Parse(Console.ReadLine());
+//Console.WriteLine("Digite o início e o fim: ");
+//inicio = int.Parse(Console.ReadLine());
+//fim = int.Parse(Console.ReadLine());
 
-if (inicio < fim)
-{
-    for (i = inicio; i <= fim; i++)
-    {
-
-
-        Console.WriteLine("Intervalo " + i);
-
-    }
-
-}else if (inicio > fim)
-{
-    for (i = inicio; i >= fim; i--)
-    {
+//if (inicio < fim)
+//{
+//    for (i = inicio; i <= fim; i++)
+//    {
 
 
-        Console.WriteLine("Intervalo " + i);
+//        Console.WriteLine("Intervalo " + i);
 
-    }
+//    }
 
-}
-else
-{
-    Console.WriteLine("Inicio e fim não podem ser numeros iguais, tente novamente.");
-}
+//}else if (inicio > fim)
+//{
+//    for (i = inicio; i >= fim; i--)
+//    {
+
+
+//        Console.WriteLine("Intervalo " + i);
+
+//    }
+
+//}
+//else
+//{
+//    Console.WriteLine("Inicio e fim não podem ser numeros iguais, tente novamente.");
+//}
 
 
 
@@ -96,13 +96,13 @@ else
 
 //Exemplo 7
 
-//int num, i;
-//Console.WriteLine("Entre com a tabuada:");
-//num = int.Parse(Console.ReadLine());
+int num, i;
+Console.WriteLine("Entre com a tabuada:");
+num = int.Parse(Console.ReadLine());
 
-//for (i = 1; i <= 10; i++)
-//{
+for (i = 1; i <= 10; i++)
+{
 
-//    Console.WriteLine(i + " x " + num+ " = " +i*num);
+    Console.WriteLine(i + " x " + num + " = " + i * num);
 
-//}
+}
