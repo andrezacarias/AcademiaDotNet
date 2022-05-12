@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.AssemblyInfo.cs
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\bin\Debug\net6.0\Exercicio_2_18.exe
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\bin\Debug\net6.0\Exercicio_2_18.deps.json
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\bin\Debug\net6.0\Exercicio_2_18.runtimeconfig.json
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\bin\Debug\net6.0\Exercicio_2_18.dll
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\bin\Debug\net6.0\Exercicio_2_18.pdb
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.dll
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\refint\Exercicio_2_18.dll
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.pdb
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\Exercicio_2_18.genruntimeconfig.cache
+C:\Users\pc\source\repos\DotNet\Exercicio_2_18\obj\Debug\net6.0\ref\Exercicio_2_18.dll

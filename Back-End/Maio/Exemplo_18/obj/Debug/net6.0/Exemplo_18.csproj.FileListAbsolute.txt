@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\DotNet\Exemplo_18\bin\Debug\net6.0\Exemplo_18.exe
+C:\Users\pc\source\repos\DotNet\Exemplo_18\bin\Debug\net6.0\Exemplo_18.deps.json
+C:\Users\pc\source\repos\DotNet\Exemplo_18\bin\Debug\net6.0\Exemplo_18.runtimeconfig.json
+C:\Users\pc\source\repos\DotNet\Exemplo_18\bin\Debug\net6.0\Exemplo_18.dll
+C:\Users\pc\source\repos\DotNet\Exemplo_18\bin\Debug\net6.0\Exemplo_18.pdb
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.AssemblyInfo.cs
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.dll
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\refint\Exemplo_18.dll
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.pdb
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\Exemplo_18.genruntimeconfig.cache
+C:\Users\pc\source\repos\DotNet\Exemplo_18\obj\Debug\net6.0\ref\Exemplo_18.dll

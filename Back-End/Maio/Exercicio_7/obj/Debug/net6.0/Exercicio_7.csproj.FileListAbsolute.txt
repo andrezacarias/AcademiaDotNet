@@ -1,0 +1,15 @@
+C:\AcademiaDotNet\Exercicio_7\bin\Debug\net6.0\Exercicio_7.exe
+C:\AcademiaDotNet\Exercicio_7\bin\Debug\net6.0\Exercicio_7.deps.json
+C:\AcademiaDotNet\Exercicio_7\bin\Debug\net6.0\Exercicio_7.runtimeconfig.json
+C:\AcademiaDotNet\Exercicio_7\bin\Debug\net6.0\Exercicio_7.dll
+C:\AcademiaDotNet\Exercicio_7\bin\Debug\net6.0\Exercicio_7.pdb
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.csproj.AssemblyReference.cache
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.GeneratedMSBuildEditorConfig.editorconfig
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.AssemblyInfoInputs.cache
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.AssemblyInfo.cs
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.csproj.CoreCompileInputs.cache
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.dll
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\refint\Exercicio_7.dll
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.pdb
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\Exercicio_7.genruntimeconfig.cache
+C:\AcademiaDotNet\Exercicio_7\obj\Debug\net6.0\ref\Exercicio_7.dll

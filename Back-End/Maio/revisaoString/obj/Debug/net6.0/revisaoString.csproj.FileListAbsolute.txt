@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\bin\Debug\net6.0\revisaoString.exe
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\bin\Debug\net6.0\revisaoString.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\bin\Debug\net6.0\revisaoString.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\bin\Debug\net6.0\revisaoString.dll
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\bin\Debug\net6.0\revisaoString.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.dll
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\refint\revisaoString.dll
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\revisaoString.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\revisaoString\obj\Debug\net6.0\ref\revisaoString.dll
