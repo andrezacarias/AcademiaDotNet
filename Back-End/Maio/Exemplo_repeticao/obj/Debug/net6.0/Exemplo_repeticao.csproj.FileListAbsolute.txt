@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\bin\Debug\net6.0\Exemplo_repeticao.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\bin\Debug\net6.0\Exemplo_repeticao.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\bin\Debug\net6.0\Exemplo_repeticao.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\bin\Debug\net6.0\Exemplo_repeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\bin\Debug\net6.0\Exemplo_repeticao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\refint\Exemplo_repeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\Exemplo_repeticao.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\Exemplo_repeticao\obj\Debug\net6.0\ref\Exemplo_repeticao.dll
