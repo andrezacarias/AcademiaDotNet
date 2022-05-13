@@ -12,33 +12,34 @@
 // Números inteiros pares entre 1 e 8: 2, 4, 6.
 
 
+// Modificar o programa em VS anterior para que ao final ele pergunte ao usuário se ele deseja 
+// informar um outro número. Caso positivo, o programa em VS deve ser repetido.
 
-
-
-int numeroInteiro;
-int par = 0;
+int numeroInteiro, par = 0;
+string repete;
 
 do
 {
-
     Console.Write("Digite um número inteiro entre 1 e 50:");
     numeroInteiro = int.Parse(Console.ReadLine());
-    if (numeroInteiro > 0 && numeroInteiro <= 50)
+
+        Console.WriteLine($"O número digitado foi : {numeroInteiro}");
+
+Console.Clear();
+
+if (par < numeroInteiro)
     {
-        Console.WriteLine("Número digitado: " + numeroInteiro);
-        break;
+        for (par = 0; par <= numeroInteiro; par++)
+        {
+            if (par % 2 == 0)
+            {
+                Console.WriteLine(par);
+            }
+        }
     }
-    else
-    {
-        Console.WriteLine("Valor deve ser entre 1 e 50!");
 
-    }
+    Console.WriteLine("Deseja digitar outro número? (S/N)");
+    repete = Console.ReadLine().ToUpper();
+    Console.Clear();
 
-} while (true);
-
-while (par <= numeroInteiro - 2)
-{
-
-    Console.Write((par = par + 2) + ",");
-
-}
+}while (repete != "N");
