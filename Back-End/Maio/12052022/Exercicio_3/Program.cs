@@ -3,7 +3,7 @@
 // Caso contrário, o programa em VS deve informar se o número é par ou ímpar
 // e se ele é um número primo.   
 
-int numero, divisores=1;
+int numero, divisor=0, indicador=0;
 
 do
 {
@@ -23,20 +23,23 @@ do
             Console.Clear();
             Console.WriteLine($"O { numero} é um número ímpar!");
             
-            for(int i = numero; i > 0; i--)
+           for(int i = 1; i <= numero; i++)
+           {
+                divisor = numero % i;
+                //Console.WriteLine(divisor);
+                if(divisor == 0)
+                {
+                    indicador++;
+                   // Console.WriteLine("Indicador " + indicador);
+                }
+                                  
+            }
+            if (indicador == 2)
             {
-                if(numero % i == 0)
-                {
-                    divisores++;
-                }
-                if(divisores == 2)
-                {
-                    //Console.Clear();
-                    Console.WriteLine($"O {numero} é um numero primo!");
-                    divisores = 0;
-                }
+                Console.WriteLine("Número PRIMO!");
+                //indicador = 0;
             }
         }
     }
-
-}while(numero != 0);
+    indicador = 0;
+} while(numero != 0);
