@@ -12,6 +12,7 @@ int totalVotosZeca = 0;
 int totalVotosJoao = 0;
 int totalVotosBranco = 0;
 int totalVotosNulos = 0;
+int totalEleitores = 0;
 
 do
 {
@@ -43,10 +44,14 @@ do
     }
     Console.WriteLine("Obrigado por votar nessas eleições");
     Console.ReadKey();
+    Console.Clear();
 
 } while (voto != "FIM");
 
+totalEleitores =  totalVotosJoao + totalVotosBranco + totalVotosNulos + totalVotosZeca;
+
 Console.WriteLine("Total de votos para o Zeca: " + totalVotosZeca);
 Console.WriteLine("Total de votos para o João: " + totalVotosJoao);
-Console.WriteLine("Total de Votos em Branco " + totalVotosBranco);
-Console.WriteLine("Total de Votos Nulos " + totalVotosNulos);
+Console.WriteLine("Total de Votos em Branco: " + totalVotosBranco);
+Console.WriteLine("Total de Votos Nulos: " + totalVotosNulos);
+Console.WriteLine("Total de Eleitores: " + totalEleitores);
