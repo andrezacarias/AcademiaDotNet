@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\bin\Debug\net6.0\Drop2_Email.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\bin\Debug\net6.0\Drop2_Email.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\bin\Debug\net6.0\Drop2_Email.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\bin\Debug\net6.0\Drop2_Email.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\bin\Debug\net6.0\Drop2_Email.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\refint\Drop2_Email.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\Drop2_Email.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop2_Email\obj\Debug\net6.0\ref\Drop2_Email.dll
