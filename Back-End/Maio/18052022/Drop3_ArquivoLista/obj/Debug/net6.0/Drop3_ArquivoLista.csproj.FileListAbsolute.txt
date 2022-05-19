@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\bin\Debug\net6.0\Drop3_ArquivoLista.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\bin\Debug\net6.0\Drop3_ArquivoLista.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\bin\Debug\net6.0\Drop3_ArquivoLista.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\bin\Debug\net6.0\Drop3_ArquivoLista.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\bin\Debug\net6.0\Drop3_ArquivoLista.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\refint\Drop3_ArquivoLista.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\Drop3_ArquivoLista.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\18052022\Drop3_ArquivoLista\obj\Debug\net6.0\ref\Drop3_ArquivoLista.dll
