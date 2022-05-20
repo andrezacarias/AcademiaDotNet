@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\bin\Debug\net6.0\Drop6_listaArquivoEscrita.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\bin\Debug\net6.0\Drop6_listaArquivoEscrita.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\bin\Debug\net6.0\Drop6_listaArquivoEscrita.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\bin\Debug\net6.0\Drop6_listaArquivoEscrita.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\bin\Debug\net6.0\Drop6_listaArquivoEscrita.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\refint\Drop6_listaArquivoEscrita.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\Drop6_listaArquivoEscrita.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\19052022\Drop6_listaArquivoEscrita\obj\Debug\net6.0\ref\Drop6_listaArquivoEscrita.dll
