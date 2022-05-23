@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\bin\Debug\net6.0\Projeto_OO.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\bin\Debug\net6.0\Projeto_OO.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\bin\Debug\net6.0\Projeto_OO.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\bin\Debug\net6.0\Projeto_OO.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\bin\Debug\net6.0\Projeto_OO.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\refint\Projeto_OO.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\Projeto_OO.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\20052022\AulaOO\Projeto_OO\obj\Debug\net6.0\ref\Projeto_OO.dll
