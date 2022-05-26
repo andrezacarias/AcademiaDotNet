@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\bin\Debug\net6.0\OO_AnimalDeEstimacao.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\bin\Debug\net6.0\OO_AnimalDeEstimacao.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\bin\Debug\net6.0\OO_AnimalDeEstimacao.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\bin\Debug\net6.0\OO_AnimalDeEstimacao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\bin\Debug\net6.0\OO_AnimalDeEstimacao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\refint\OO_AnimalDeEstimacao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\OO_AnimalDeEstimacao.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\25052022\OO_AnimalDeEstimacao\obj\Debug\net6.0\ref\OO_AnimalDeEstimacao.dll

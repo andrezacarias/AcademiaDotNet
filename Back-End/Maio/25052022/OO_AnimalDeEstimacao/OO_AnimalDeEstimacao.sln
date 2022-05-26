@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OO_AnimalDeEstimacao", "OO_AnimalDeEstimacao.csproj", "{808712C4-9156-4F3C-B5A5-6AA31E58CDC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB35F80F-11DE-4246-9C55-8BE6300FF7F1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808712C4-9156-4F3C-B5A5-6AA31E58CDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808712C4-9156-4F3C-B5A5-6AA31E58CDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808712C4-9156-4F3C-B5A5-6AA31E58CDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808712C4-9156-4F3C-B5A5-6AA31E58CDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E6EC806-F03E-4D82-9613-FC0B1E83E287}
+	EndGlobalSection
+EndGlobal
