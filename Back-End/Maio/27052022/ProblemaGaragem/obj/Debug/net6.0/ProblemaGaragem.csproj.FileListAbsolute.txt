@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\bin\Debug\net6.0\ProblemaGaragem.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\bin\Debug\net6.0\ProblemaGaragem.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\bin\Debug\net6.0\ProblemaGaragem.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\bin\Debug\net6.0\ProblemaGaragem.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\bin\Debug\net6.0\ProblemaGaragem.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\refint\ProblemaGaragem.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ProblemaGaragem.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\27052022\ProblemaGaragem\obj\Debug\net6.0\ref\ProblemaGaragem.dll

@@ -10,8 +10,6 @@ A classe deverá possuir dois dados privados (propriedades) para representar as 
 A classe deverá possuir métodos de acesso (propriedade getter e setter) para permitir que o usuário 
 armazene/leia os dados dos dois dados privados (propriedades).*/
 
-
-
 using OO_AnimalDeEstimacao;
 
 Console.WriteLine("Vou apresentar meus bichos de estimação!");
@@ -19,20 +17,20 @@ String nome="", especie="";
 int contadorGato=0, contadorCachorro=0, contadorPeixe=0;
 for (int i = 0; i < 6; i++)
 {
-   
-    Console.WriteLine("Digite o nome do bicho: ");
-nome = Console.ReadLine();
-Console.WriteLine("Digite a espécie do bicho: ");
-especie = Console.ReadLine().ToLower();
-    
 
-if (especie == "gato" || especie == "cachorro" || especie == "peixe")
+    Console.WriteLine("Digite o nome do bicho: ");
+    nome = Console.ReadLine();
+    Console.WriteLine("Digite a espécie do bicho: ");
+    especie = Console.ReadLine().ToLower();
+
+
+    if (especie == "gato" || especie == "cachorro" || especie == "peixe")
     {
         if (especie == "gato")
         {
             contadorGato++;
         }
-        else if(especie == "cachorro")
+        else if (especie == "cachorro")
         {
             contadorCachorro++;
         }
@@ -52,7 +50,6 @@ if (especie == "gato" || especie == "cachorro" || especie == "peixe")
 
 }
 
-
     BichoDeEstimacao m = new BichoDeEstimacao(nome, especie , contadorGato, contadorCachorro, contadorPeixe );
-m.mostraAnimalDeEstimacao();
+    m.mostraAnimalDeEstimacao();
 

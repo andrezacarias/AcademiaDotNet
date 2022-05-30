@@ -26,6 +26,8 @@ namespace OO_AnimalDeEstimacao
         }
 
         //metodos
+
+
         public void mostraAnimalDeEstimacao()
         {
             Console.WriteLine($"Eu tenho {contadorGato} gatos ,{contadorCachorro} cachorros e {contadorPeixe} peixes.");

@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\bin\Debug\net6.0\ProblemaDoEmail.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\bin\Debug\net6.0\ProblemaDoEmail.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\bin\Debug\net6.0\ProblemaDoEmail.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\bin\Debug\net6.0\ProblemaDoEmail.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\bin\Debug\net6.0\ProblemaDoEmail.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\refint\ProblemaDoEmail.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ProblemaDoEmail.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Maio\26052022\ProblemaDoEmail\obj\Debug\net6.0\ref\ProblemaDoEmail.dll
