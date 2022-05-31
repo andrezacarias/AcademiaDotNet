@@ -29,8 +29,9 @@ namespace ProblemaGaragem
                 leitor = new StreamReader(nomeArquivo);
                 do
                 {
-                    vetorDados = leitor.ReadLine().Split(";"); //placa;horaDeEntrada
-                   listaVeiculo.Add(new Veiculo(vetorDados[0], DateTime.Now));
+                  vetorDados = leitor.ReadLine().Split(";"); //placa;horaDeEntrada
+                  //listaVeiculo.Add(new Veiculo(vetorDados[0], DateTime.Now));
+                  listaVeiculo.Add(new Veiculo(vetorDados[0], DateTime.Parse(vetorDados[1])));
                 } while (!leitor.EndOfStream); //repete-se a leitura da linha até que o leitor não chegue no final do arquivo
                 leitor.Close();
             }
