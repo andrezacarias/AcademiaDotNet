@@ -1,0 +1,17 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\bin\Debug\net6.0-windows\WindowsForm01.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\bin\Debug\net6.0-windows\WindowsForm01.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\bin\Debug\net6.0-windows\WindowsForm01.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\bin\Debug\net6.0-windows\WindowsForm01.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\bin\Debug\net6.0-windows\WindowsForm01.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.Form1.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\refint\WindowsForm01.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\WindowsForm01.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\01062022\WindowsForm01\obj\Debug\net6.0-windows\ref\WindowsForm01.dll
