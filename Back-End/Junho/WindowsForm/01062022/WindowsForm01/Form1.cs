@@ -17,7 +17,7 @@ namespace WindowsForm01
                 "  o bairro do usuário digitado é " + tbBairro.Text + "\n" +
                 "  a cidade do usuário digitado é " + tbCidade.Text + "\n" +
                 "  o sexo do usuário digitado é " + tbSexo.Text);
-            MessageBox.Show("Cadastro efetuado com sucesso!");
+            MessageBox.Show("Cadastro efetuado com sucesso");
         }
 
         private void BTCancel_Click(object sender, EventArgs e)
