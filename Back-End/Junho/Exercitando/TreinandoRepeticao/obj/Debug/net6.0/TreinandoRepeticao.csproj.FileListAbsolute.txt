@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\bin\Debug\net6.0\TreinandoRepeticao.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\bin\Debug\net6.0\TreinandoRepeticao.deps.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\bin\Debug\net6.0\TreinandoRepeticao.runtimeconfig.json
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\bin\Debug\net6.0\TreinandoRepeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\bin\Debug\net6.0\TreinandoRepeticao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.AssemblyInfo.cs
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\refint\TreinandoRepeticao.dll
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\TreinandoRepeticao.genruntimeconfig.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\Exercitando\TreinandoRepeticao\obj\Debug\net6.0\ref\TreinandoRepeticao.dll
