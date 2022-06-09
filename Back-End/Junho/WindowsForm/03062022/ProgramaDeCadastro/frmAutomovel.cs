@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace ProgramaDeCadastro
 {
-    public partial class Form1 : Form
+    public partial class frmAutomovel : Form
     {
-        public Form1()
+        static List<Carro> carros = new List<Carro>();
+        public frmAutomovel()
         {
             InitializeComponent();
         }
@@ -60,7 +61,38 @@ namespace ProgramaDeCadastro
             else if (cbQtdPortas.Text == "4 portas") portas = 4;
             else if (cbQtdPortas.Text == "5 portas") portas = 5;
             Carro c = new Carro(tbModeloCarro.Text, tbFabricante.Text, ac, dh, abs, ab, ve, portas);
-            c.MostrarDadosCarro();
+            //c.MostrarDadosCarro();
+            carros.Add(c);
+            //mostraListadeCarros();
+            dgAutomoveis.Rows.Add(tbModeloCarro.Text, tbFabricante.Text, ac, dh, abs, ab, ve, portas);
+        }
+        static void mostraListadeCarros() 
+        {
+            foreach(Carro c in carros)
+            {
+                MessageBox.Show("Carro " + c.modelo + 
+                    "\nFabricante " + c.fabricante + 
+                    "\nDH " + c.dh + 
+                    "\nAr " + c.ar + 
+                    "\nABS " + c.abs + 
+                    "\nAir bag " + c.airbag + 
+                    "\nVidros eletrico " + c.ve + 
+                    "\nPortas " + c.portas);
+            }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void lbOpcionais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

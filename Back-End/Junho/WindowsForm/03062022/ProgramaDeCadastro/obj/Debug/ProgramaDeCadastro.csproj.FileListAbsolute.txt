@@ -3,9 +3,10 @@ C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaD
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\bin\Debug\ProgramaDeCadastro.pdb
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.csproj.AssemblyReference.cache
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.csproj.SuggestedBindingRedirects.cache
-C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.Form1.resources
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.Properties.Resources.resources
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.csproj.GenerateResource.cache
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.csproj.CoreCompileInputs.cache
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.exe
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.Principal.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\03062022\ProgramaDeCadastro\obj\Debug\ProgramaDeCadastro.frmAutomovel.resources

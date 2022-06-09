@@ -8,6 +8,7 @@ namespace ProgramaDeCadastro
 {
     internal static class Program
     {
+        
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -16,7 +17,7 @@ namespace ProgramaDeCadastro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Principal());
         }
     }
 }
