@@ -340,7 +340,7 @@ ORDER BY preco ASC;
 
 select livro.* 
 from livro,genero 
-where descricao = 'Auto-Ajuda' and livro.id_genero = genero.id_genero 
+where descricao = 'Auto-Ajuda' AND Livro.idGenero = Genero.idGenero 
 order by preco asc;
 
 -- xix.Mostre quantos autores estão cadastros;
@@ -378,10 +378,12 @@ select round(avg(preco),2)
 from livro 
 where idEditora = 2;
 
-create view MediaPreco as MP
+--create view MediaPreco as precoMedio
 select round(avg(preco),2) 
 from livro 
 where idEditora = 2;
+
+
 
 -- xxii.Mostre os livros com seus respectivos nomes de editoras e gêneros;
 select Livro.titulo, Editora.nome as editora, Genero.descricao as genero 
@@ -401,9 +403,9 @@ WHERE Livro_Autor.idLivro = Livro.idLivro AND
 Livro_Autor.idAutor = Autor.idAutor;
 
 select Livro.titulo as livro, Autor.nome as autor 
-from Livro, Autor, LivroAutor 
-where LivroAutor.idAutor=Autor.idAutor and 
-LivroAutor.idLivro=Livro.idLivro;
+from Livro, Autor, Livro_Autor 
+where Livro_Autor.idAutor=Autor.idAutor and 
+Livro_Autor.idLivro=Livro.idLivro;
 
 SELECT Livro.titulo, Autor.nome, Editora.nome 
 FROM Livro, Autor, Livro_Autor, Editora 
@@ -423,10 +425,10 @@ WHERE semanasConsecutivas = (SELECT max(semanasConsecutivas)
 select livro.titulo, ranking_semanal.idLivro, ranking_semanal.semanasConsecutivas 
 from ranking_semanal, livro 
 where Livro.idLivro = Ranking_semanal.idLivro
-order by semanasConsecutivas desc limit 1 ;
+order by semanasConsecutivas desc --limit 1 ;
 
 -- xxv.Mostre o nome dos autores dos livros que estavam no ranking da semana de 24/08/2003 a 30/08/2003;
-select distinct Autor.nome as autor 
+select distinct Autor.nome as Autor 
 from Livro, Autor, Livro_Autor, Ranking, Ranking_Semanal 
 where Livro_Autor.idAutor=Autor.idAutor and 
       Livro_Autor.idLivro=Livro.idLivro and 
@@ -434,12 +436,12 @@ where Livro_Autor.idAutor=Autor.idAutor and
       Ranking_Semanal.idLivro=Livro.idLivro and Ranking.idRanking=2;
       
 select distinct Autor.nome as autor 
-from Livro, Autor, Livro_Autor, Ranking, RankingSemanal 
+from Livro, Autor, Livro_Autor, Ranking, Ranking_Semanal 
 where (Ranking.dataInicial='2003-08-24' and Ranking.dataFinal='2003-08-30') and
 Livro_Autor.idAutor=Autor.idAutor and 
 Livro_Autor.idLivro=Livro.idLivro and 
-RankingSemanal.idRanking = Ranking.idRanking and 
-RankingSemanal.idLivro=Livro.idLivro;
+Ranking_Semanal.idRanking = Ranking.idRanking and 
+Ranking_Semanal.idLivro=Livro.idLivro;
 
 select autor.nome
 from autor,ranking, ranking_semanal, livro_autor
