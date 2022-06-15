@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+}
+div.container {
+    height: 800px;
+    width: 1600px;
+    background-color: lightyellow;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+div.Hidrogenio {
+    width: 40px;
+    height: 42px;
+    background-color: lightgreen;
+    border: 0.5px solid black ;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 70px;
+}

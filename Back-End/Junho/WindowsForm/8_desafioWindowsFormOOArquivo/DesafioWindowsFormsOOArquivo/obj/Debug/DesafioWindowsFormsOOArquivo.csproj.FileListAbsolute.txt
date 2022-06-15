@@ -1,0 +1,11 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\bin\Debug\DesafioWindowsFormsOOArquivo.exe.config
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\bin\Debug\DesafioWindowsFormsOOArquivo.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\bin\Debug\DesafioWindowsFormsOOArquivo.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.TelaPrincipal.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.Properties.Resources.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\WindowsForm\8_desafioWindowsFormOOArquivo\DesafioWindowsFormsOOArquivo\obj\Debug\DesafioWindowsFormsOOArquivo.pdb

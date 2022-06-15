@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glicemia_WindowsForms", "Glicemia_WindowsForms.csproj", "{422A597F-4AAD-467A-BD7F-A37E63DC22A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{422A597F-4AAD-467A-BD7F-A37E63DC22A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422A597F-4AAD-467A-BD7F-A37E63DC22A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422A597F-4AAD-467A-BD7F-A37E63DC22A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422A597F-4AAD-467A-BD7F-A37E63DC22A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BB977C0-43A7-4E31-A0AA-C3897FE07D83}
+	EndGlobalSection
+EndGlobal
