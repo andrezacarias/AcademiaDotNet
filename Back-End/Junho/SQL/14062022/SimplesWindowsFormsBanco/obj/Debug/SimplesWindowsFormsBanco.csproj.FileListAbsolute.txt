@@ -1,0 +1,11 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\bin\Debug\SimplesWindowsFormsBanco.exe.config
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\bin\Debug\SimplesWindowsFormsBanco.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\bin\Debug\SimplesWindowsFormsBanco.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.CadastroPessoa.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.Properties.Resources.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\14062022\SimplesWindowsFormsBanco\obj\Debug\SimplesWindowsFormsBanco.pdb

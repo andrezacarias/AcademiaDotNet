@@ -119,6 +119,7 @@ namespace Desafio01_Garagem
                 DateTime dataTemporaria;
                 dataTemporaria = Convert.ToDateTime(mtbData.Text);
                 TimeSpan tempoDePermanencia = DateTime.Now.Subtract(dataTemporaria);
+                //string dataEntrada = DateTime.Now.ToShortDateString();
                 //calculaValorCobrado();
                 //
                 //Inicio
@@ -135,7 +136,6 @@ namespace Desafio01_Garagem
 
                 valorCobrado = tempoHora * 10;
                 //Fim
-                //
                 MessageBox.Show("Mostre " + valorCobrado);
                 StreamWriter escritor = new StreamWriter("arquivoSaidaVeiculos.dat", true);
                 escritor.WriteLine(c.tbPlaca.Text + ";" +  c.mtbData.Text + ";" + tempoDePermanencia + ";" + valorCobrado);
@@ -149,25 +149,25 @@ namespace Desafio01_Garagem
             }
         }
 
-        //private void calculaValorCobrado()
-        //{
+        private void calculaValorCobrado()
+        {
             
-        //}
+        }
 
-        //public void calculaValorCobrado(Veiculo c)
-        //{
-        //    string[] contaTempo = c.tempoDePermanencia.ToString().Split(':');
+        public void calculaValorCobrado(Veiculo c)
+        {
+            string[] contaTempo = c.tempoDePermanencia.ToString().Split(':');
 
-        //    int tempoHora = Convert.ToInt16(contaTempo[0]);
-        //    int tempoMinuto = Convert.ToInt16(contaTempo[1]);
+            int tempoHora = Convert.ToInt16(contaTempo[0]);
+            int tempoMinuto = Convert.ToInt16(contaTempo[1]);
 
-        //    if (tempoMinuto > 0)
-        //    {
-        //        tempoHora++;
-        //    }
+            if (tempoMinuto > 0)
+            {
+                tempoHora++;
+            }
 
-        //   valorCobrado = tempoHora * 12;
-        //}
+           valorCobrado = tempoHora * 12;
+        }
 
     }
 }
