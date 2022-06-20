@@ -112,8 +112,9 @@ namespace Desafio01_Garagem
         private void dgEstacionados_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             DateTime dataTemporaria;
-            lerArquivoEntrada();
+            //lerArquivoEntrada();
             tbPlaca.Text = dgEstacionados.CurrentRow.Cells[0].Value.ToString();
+            dataEntrada= dgEstacionados.CurrentRow.Cells[1].Value.ToString();   
             mtbData.Text = dgEstacionados.CurrentRow.Cells[2].Value.ToString();
             dataTemporaria = Convert.ToDateTime(mtbData.Text);
             TimeSpan tempoDePermanencia = DateTime.Now.Subtract(dataTemporaria);
