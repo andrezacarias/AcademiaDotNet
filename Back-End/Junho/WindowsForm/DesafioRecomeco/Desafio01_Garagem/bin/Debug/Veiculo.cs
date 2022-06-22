@@ -24,7 +24,8 @@ namespace Desafio01_Garagem
         public string vetorDados { get; internal set; }
         public object DtpHoraEntrada { get; }
         public string dataEntrada;
-        
+        public bool jacadastrado = false;
+
 
         //Construtor
         public Veiculo(TextBox tbPlaca,  ComboBox cbOperacao, MaskedTextBox mtbData,
@@ -97,6 +98,7 @@ namespace Desafio01_Garagem
         {
             try
             {
+                
                 string dataEntrada = DateTime.Now.ToShortDateString();
                 StreamWriter escritor = new StreamWriter("arquivoEntradaVeiculos.dat", true);
                 escritor.WriteLine(c.tbPlaca.Text + ";" + dataEntrada + ";" + c.mtbData.Text);
@@ -149,10 +151,10 @@ namespace Desafio01_Garagem
                 MessageBox.Show("Arquivo de cadastro com problemas" + e.Message);
             }
         }
-
+        
         //private void calculaValorCobrado()
         //{
-            
+
         //}
 
         //public void calculaValorCobrado(Veiculo c)
