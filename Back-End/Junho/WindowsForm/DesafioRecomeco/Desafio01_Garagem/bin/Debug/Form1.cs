@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Collections.Generic;
 
 
 namespace Desafio01_Garagem
@@ -16,6 +17,7 @@ namespace Desafio01_Garagem
     {
         private string dataEntrada;
         public bool jacadastrado;
+        //List<Util> lista;
         public TelaPrincipalGaragem()
         {
             InitializeComponent();
@@ -46,8 +48,7 @@ namespace Desafio01_Garagem
                 //referentes aos veículos que deram entrada na garagem no dia de expediente
                 StreamReader leitor = new StreamReader("arquivoEntradaVeiculos.dat");
                 string linha;//placa;dataEntrada,dataHora
-                string[] dados; //FNO4273;13/06/2022;17:30 
-                //MessageBox.Show(tbPlaca.Text);
+                string[] dados; //FNO4273;13/06/2022;17:30
                 do
                 {
                     
@@ -88,7 +89,7 @@ namespace Desafio01_Garagem
                     linha = leitor.ReadLine();
                     dados = linha.Split(';');
                     dgSaida.Rows.Add(dados[0], dados[1], dados[2], dados[3]);
-
+                    
 
                 } while (!leitor.EndOfStream);
                 leitor.Close();
@@ -111,25 +112,35 @@ namespace Desafio01_Garagem
             //Constrói um objeto c(veículo)
             Veiculo c = new Veiculo(tbPlaca, mtbData);
             //Seleciona Entrada ou Saída do veículo
+            int i;
             if (cbOperacao.SelectedIndex == 0)
             {
-                //MessageBox.Show(tbPlaca.Text + "\n" + vetorDados[0] + "\n" + mtbData.Text + "\n" + cbOperacao.Text);
                 lerArquivoEntrada();
-                if (jacadastrado == false)
-                {
-                    Veiculo.gravarArquivoEntrada(c);
-                    jacadastrado = true;
+                //if (jacadastrado == false)
+                //{
+                //    Veiculo.gravarArquivoEntrada(c);
+                //    jacadastrado = true;
 
-                }
-                else
-                {
-                    jacadastrado = true;
-                }
+                //}
+                Veiculo.gravarArquivoEntrada(c);
                 lerArquivoEntrada();
 
             }
             else
             {
+                File.Delete("arquivoEntradaVeiculos.dat");
+                Veiculo v;
+                dgEstacionados.Rows.RemoveAt(dgEstacionados.CurrentRow.Index);
+                for(i=0;  i<dgEstacionados.Rows.Count-1; i++)
+                {
+                    gambiarra.Text=dgEstacionados.Rows[i].Cells[0].Value.ToString();
+                    gambiarra2.Text=dgEstacionados.Rows[i].Cells[2].Value.ToString();
+                    v = new Veiculo(gambiarra, 
+                                   dgEstacionados.Rows[i].Cells[1].Value.ToString(),
+                                   gambiarra2);
+                    Veiculo.gravarArquivoEntrada(v);
+                }
+                lerArquivoEntrada();
                 c.gravarArquivoSaida(c);
                 lerArquivoSaida();
                

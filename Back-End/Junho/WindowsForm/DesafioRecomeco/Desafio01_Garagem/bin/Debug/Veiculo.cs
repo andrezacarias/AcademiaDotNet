@@ -93,7 +93,13 @@ namespace Desafio01_Garagem
             this.tbPlaca = tbPlaca;
             this.mtbData = mtbData;
         }
-
+        public Veiculo(TextBox tbPlaca, string dataDia, MaskedTextBox mtbData)
+        {
+            this.tbPlaca = tbPlaca;
+            this.dataDia = dataDia;
+            this.mtbData = mtbData;
+            
+        }
         public static void gravarArquivoEntrada(Veiculo c)
         {
             try
@@ -135,10 +141,10 @@ namespace Desafio01_Garagem
                     tempoHora++;
                 }
 
-                valorCobrado = tempoHora * 10;
+                valorCobrado = tempoHora * 5;
                 //Fim
                 //
-                MessageBox.Show("Mostre " + valorCobrado);
+                MessageBox.Show("Tempo de permanência : " + tempoDePermanencia + "\nValor da estadia : R$"  + valorCobrado + ",00");
                 StreamWriter escritor = new StreamWriter("arquivoSaidaVeiculos.dat", true);
                 escritor.WriteLine(c.tbPlaca.Text + ";" +  c.mtbData.Text + ";" + tempoDePermanencia + ";" + valorCobrado);
                 escritor.Flush();

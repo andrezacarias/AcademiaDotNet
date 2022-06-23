@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Desafio01_Garagem
 {
-    internal class Util
+    public class Util
     {
         List<Util> lista = new List<Util>();
         public List<Util> Lista { get { return lista; } }

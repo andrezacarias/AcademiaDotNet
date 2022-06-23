@@ -46,6 +46,8 @@
             this.Horas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Permanencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gambiarra = new System.Windows.Forms.TextBox();
+            this.gambiarra2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgEstacionados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSaida)).BeginInit();
             this.SuspendLayout();
@@ -210,11 +212,31 @@
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 
+            // gambiarra
+            // 
+            this.gambiarra.Location = new System.Drawing.Point(347, 78);
+            this.gambiarra.Name = "gambiarra";
+            this.gambiarra.Size = new System.Drawing.Size(100, 20);
+            this.gambiarra.TabIndex = 13;
+            this.gambiarra.Visible = false;
+            // 
+            // gambiarra2
+            // 
+            this.gambiarra2.Location = new System.Drawing.Point(347, 104);
+            this.gambiarra2.Mask = "00:00";
+            this.gambiarra2.Name = "gambiarra2";
+            this.gambiarra2.Size = new System.Drawing.Size(55, 20);
+            this.gambiarra2.TabIndex = 14;
+            this.gambiarra2.ValidatingType = typeof(System.DateTime);
+            this.gambiarra2.Visible = false;
+            // 
             // TelaPrincipalGaragem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 612);
+            this.Controls.Add(this.gambiarra2);
+            this.Controls.Add(this.gambiarra);
             this.Controls.Add(this.dgSaida);
             this.Controls.Add(this.dgEstacionados);
             this.Controls.Add(this.lblVeiculosSaida);
@@ -227,7 +249,7 @@
             this.Controls.Add(this.tbPlaca);
             this.Controls.Add(this.lblPlaca);
             this.Name = "TelaPrincipalGaragem";
-            this.Text = "Grerenciamento de Garagem.";
+            this.Text = "Gerenciamento de Garagem.";
             this.Load += new System.EventHandler(this.TelaPrincipalGaragem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgEstacionados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgSaida)).EndInit();
@@ -256,6 +278,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Horas;
         private System.Windows.Forms.DataGridViewTextBoxColumn Permanencia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        private System.Windows.Forms.TextBox gambiarra;
+        private System.Windows.Forms.MaskedTextBox gambiarra2;
     }
 }
 
