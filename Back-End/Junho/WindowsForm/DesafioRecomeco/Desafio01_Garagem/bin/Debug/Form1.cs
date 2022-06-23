@@ -16,8 +16,7 @@ namespace Desafio01_Garagem
     public partial class TelaPrincipalGaragem : Form
     {
         private string dataEntrada;
-        public bool jacadastrado;
-        //List<Util> lista;
+        public string jacadastrado;
         public TelaPrincipalGaragem()
         {
             InitializeComponent();
@@ -55,11 +54,13 @@ namespace Desafio01_Garagem
                     linha = leitor.ReadLine();
                     dados = linha.Split(';');
                     dgEstacionados.Rows.Add(dados[0], dados[1], dados[2]);
+                    jacadastrado = dados[0];
                     //MessageBox.Show("tbPlaca= " + tbPlaca.Text + "\n dados[0]= " + dados[0]+ " "+ jacadastrado);
                     if (tbPlaca.Text.Equals(dados[0]))
                     {
                        MessageBox.Show("Veículo já estacionado, digite placa diferente!");
-                       
+                       break;
+
                     }
                     
 
@@ -115,16 +116,22 @@ namespace Desafio01_Garagem
             int i;
             if (cbOperacao.SelectedIndex == 0)
             {
+                if (mtbData == null)
+                {
+                    MessageBox.Show("Digite a hora de Entrada HH:MM");
+                    
+                }
                 lerArquivoEntrada();
-                //if (jacadastrado == false)
-                //{
-                //    Veiculo.gravarArquivoEntrada(c);
-                //    jacadastrado = true;
-
-                //}
-                Veiculo.gravarArquivoEntrada(c);
+                if (jacadastrado != tbPlaca.Text)
+                {
+                    Veiculo.gravarArquivoEntrada(c);
+                    tbPlaca.Clear();
+                    mtbData.Clear();
+                }
+                //Veiculo.gravarArquivoEntrada(c);
+                //lerArquivoEntrada();
+                MessageBox.Show("Temos " + (50 - dgEstacionados.RowCount) + " vagas disponíveis.");
                 lerArquivoEntrada();
-
             }
             else
             {
@@ -140,10 +147,12 @@ namespace Desafio01_Garagem
                                    gambiarra2);
                     Veiculo.gravarArquivoEntrada(v);
                 }
-                lerArquivoEntrada();
                 c.gravarArquivoSaida(c);
+                tbPlaca.Clear();
+                mtbData.Clear();
                 lerArquivoSaida();
-               
+                MessageBox.Show("Temos " + (51 - dgEstacionados.RowCount) + " vagas disponíveis.");
+                lerArquivoEntrada();
             }
         }
 
@@ -156,8 +165,20 @@ namespace Desafio01_Garagem
             mtbData.Text = dgEstacionados.CurrentRow.Cells[2].Value.ToString();
             dataTemporaria = Convert.ToDateTime(mtbData.Text);
             TimeSpan tempoDePermanencia = DateTime.Now.Subtract(dataTemporaria);
-            MessageBox.Show("Valor " + tempoDePermanencia);
+            //MessageBox.Show("Valor " + tempoDePermanencia);
         }
-       
+
+        private void btnFinalDia_Click(object sender, EventArgs e)
+        {   
+           //TimeSpan habilita = 20:00;
+           // if(DateTime.Now < habilita)
+           // {
+                btnFinalDia.Enabled = false;
+           // }
+            File.Delete("arquivoEntradaVeiculos.dat");
+            File.Delete("arquivoSaidaVeiculos.dat");
+            dgEstacionados.Rows.Clear();
+            dgSaida.Rows.Clear();
+        }
     }
 }

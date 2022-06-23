@@ -93,7 +93,13 @@ namespace Desafio01_Garagem
             this.tbPlaca = tbPlaca;
             this.mtbData = mtbData;
         }
-
+        public Veiculo(TextBox tbPlaca, string dataDia, MaskedTextBox mtbData)
+        {
+            this.tbPlaca = tbPlaca;
+            this.dataDia = dataDia;
+            this.mtbData = mtbData;
+            
+        }
         public static void gravarArquivoEntrada(Veiculo c)
         {
             try
@@ -129,18 +135,19 @@ namespace Desafio01_Garagem
 
                 int tempoHora = Convert.ToInt16(contaTempo[0]);
                 int tempoMinuto = Convert.ToInt16(contaTempo[1]);
-
+                
                 if (tempoMinuto > 0)
                 {
                     tempoHora++;
                 }
 
-                valorCobrado = tempoHora * 10;
+                valorCobrado = tempoHora * 5;
                 //Fim
                 //
-                MessageBox.Show("Mostre " + valorCobrado);
+                horaSaida = DateTime.Now.ToShortTimeString();
+                MessageBox.Show("Tempo de permanência : " + contaTempo[0] + ":" + contaTempo[1] +" horas e minutos "+ "\nValor da estadia : R$" + valorCobrado + ",00");
                 StreamWriter escritor = new StreamWriter("arquivoSaidaVeiculos.dat", true);
-                escritor.WriteLine(c.tbPlaca.Text + ";" +  c.mtbData.Text + ";" + tempoDePermanencia + ";" + valorCobrado);
+                escritor.WriteLine(c.tbPlaca.Text + ";" + horaSaida + ";" + contaTempo[0] + ":" + contaTempo[1] + ";" + valorCobrado);
                 escritor.Flush();
                 escritor.Close();
                
