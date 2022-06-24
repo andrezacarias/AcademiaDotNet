@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Cores capturadas do projeto: https://codepen.io/umbertojunior/pen/LOGbow */
+:root{
+	--bg-preto:rgb(0,0,0);
+    --bg-branco:rgb(255,255,255);
+	--nao-metal:rgb(180,210,100);
+	--gas-nobre:rgb(100,180,225);
+	--metal-alcalino:rgb(245,200,100);
+	--metal-alcalino-terroso:rgb(240,230,90);
+	--semimetal:rgb(110,200,190);
+	--halogenio:rgb(170,225,255);
+	--outros-metais:rgb(190,210,210);
+	--metal-transicao:rgb(245,175,175);
+	--lantanideo:rgb(150,225,225);
+	--actinidio:rgb(230,190,220);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:var(--bg-branco);
+    text-align: center;
+    background-color: var(--bg-preto);
+}
+
+a:link, a:visited, a:active, a:hover {
+    background-color: var(--bg-preto);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Cores dos elementos */
+.nao-metal{
+    color: var(--nao-metal);
+    background-color: var(--nao-metal);
+}
+.gas-nobre{
+    color:var(--gas-nobre);
+    background-color: var(--gas-nobre);
+}
+.metal-alcalino{
+    color: var(--metal-alcalino);
+    background-color: var(--metal-alcalino);
+}
+.metal-alcalino-terroso{
+    color: var(--metal-alcalino-terroso);
+    background-color: var(--metal-alcalino-terroso);
+}
+.semi-metal{
+    color: var(--semimetal);
+    background-color: var(--semimetal);
+}
+.halogenio{
+    color:var(--halogenio);
+    background-color: var(--halogenio);
+}
+.outros-metais{
+    color: var(--outros-metais);
+    background-color: var(--outros-metais);
+}
+.metal-transicao{
+    color: var(--metal-transicao);
+    background-color: var(--metal-transicao);
+}
+.lantanideo{
+    color: var(--lantanideo);
+    background-color: var(--lantanideo);
+}
+.actinideo{
+    color: var(--actinidio);
+    background-color: var(--actinidio);
+}
+.bg-preto{
+    color: var(--bg-preto);
+    background-color: var(--bg-preto);
+}
+main{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-preto);
+    display: flex;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-preto);
+    display: flex;
+    justify-content: center;
+}
+.tabela-periodica{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+.legenda-tabela{
+    max-width: 100%;
+    font-size: small;
+    text-align: left;
+    display: flex;
+    max-width: 100%;
+    background-color: var(--bg-preto);
+}
+.titulo1-tabela{
+    margin:20px;
+	font-size:74px;
+	font-weight:100;
+	text-transform:uppercase;
+    letter-spacing: 0.5px;
+    justify-content: center;
+}
+
+.titulo2-tabela{
+    font-size: 20px;
+}
+
+.paragrafo-tabela{
+    font-size: 10px;
+}
+
+.elemento-tabela{
+	height: 75px;
+    width: 75px;
+	background:var(--bg-preto);	
+	border:2px solid;
+	border-radius:5px;	
+	line-height:1.25;
+    margin-top: 4px;
+    margin-left: 4px;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.elemento-tabela:hover{
+    transition: .2s;
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 2;
+}
+.section-hidden{
+    visibility: hidden;
+}
+
+.numero-atomico{
+	font-size:8px;
+	position:absolute;
+	top:5px;
+	right:8px;	
+}
+
+.lista-nao-ordenada-tabela{
+    margin-top: 16px;
+	display:flex;
+    justify-content: center;
+    position:sticky;
+    top:16px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    background-color: var(--bg-preto);
+}
+
+.itens-lista-tabela{
+    font-size: 14px;
+	flex-basis:auto;
+	line-height:1.25;
+	margin-bottom:16px;
+    background-color: var(--bg-preto);
+}
+
+.itens-lista-tabela:before{
+	content:' ';
+	display:inline-block;
+	width:14px;
+	height:14px;
+	border:2px solid;
+	border-radius:2px;	
+	margin-right:8px;
+	position:relative;
+	top:4px;
+    background-color: var(--bg-preto);
+}
+
+.itens-lista-tabela + .itens-lista-tabela{
+    margin-left:32px;	
+}
+
+  #tabela {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: table;
+    width: 80%; 
+    background: rgb(175, 175, 175);
+    margin: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .tabela-detalhes {
+    display: block;
+    width: 80%;
+    background: rgb(70, 70, 70);
+    height: 55px;
+    padding-left: 10px;
+    color: var(--bg-branco);
+    font-size: 20px;
+    line-height: 55px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .linha-cabeçalho {
+    background: #8b8b8b;
+    color: var(--bg-branco);
+   }
+
+  .coluna {
+    display: table-row;
+  }
+
+  .coluna:hover{
+    transition: .2s;
+    transform: scale(1.12);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .linha {
+    display: table-cell;
+    padding: 6px; 
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    color: var(--bg-branco);
+  }
+
+  .primeiro {
+    text-align: left;
+    color: var(--bg-branco);
+  }
+
+  .linha-cabeçalho:hover{
+    transition: 0s;
+    transform: scale(1);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .topo {
+    position: fixed;
+    width: 80px;
+    height:40px;
+    right: 15px;
+    bottom: 15px;
+    font-size: .9em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    background-color: #dee2e6;
+    border: 1px solid #ced4da;
+}
+
+.topo:hover {
+    background-color: #ced4da;
+}

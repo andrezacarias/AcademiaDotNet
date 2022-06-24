@@ -1,0 +1,27 @@
+CREATE DATABASE minhaLojinha_DB;
+--Utilizar o banco criado
+USE minhaLojinha_DB;
+--Criar tabela Clientes
+CREATE TABLE clientes(
+    idCliente INT NOT NULL IDENTITY, --auto incremento
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR (50) NOT NULL,
+    telefone INT NOT NULL,
+    PRIMARY KEY (idCliente)
+);
+--Criar tabela Produtos
+CREATE TABLE produtos(
+    idProduto INT NOT NULL IDENTITY, --auto incremento
+    nome VARCHAR(50) NOT NULL,
+    preco VARCHAR (50) NOT NULL,
+    estoque INT NOT NULL,
+    CodEAN INT NOT NULL,
+    PRIMARY KEY (idProduto)
+);
+--Criar tabela Vendas
+CREATE TABLE vendas(
+    idVendas INT NOT NULL IDENTITY, --auto incremento
+    codigoCliente VARCHAR(50) NOT NULL,
+    valorTotal FLOAT NOT NULL,
+    PRIMARY KEY (idVendas)
+);

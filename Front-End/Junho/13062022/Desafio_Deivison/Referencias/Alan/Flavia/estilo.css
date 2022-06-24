@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=PT+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ /*A pseudo-classe root, pode ser comparada à raiz de uma árvore, 
+ ela corresponde ao elemento raiz do documento (elemento html).*/ 
+
+ :root {
+    --nao_metal: #a2d345;
+    --gas_nobre: #3d9ee3;
+    --metal_alcalino: #f1b200;
+    --metal_alcalino_terroso: #eada00;
+    --semimetal: #4db6ac;
+    --halogenio: #70cbeb;
+    --outros_metais: #a2c7d3;
+    --metal_de_transicao: #eb8e8e;
+    --lantanideo: #90e3e9;
+    --actinidio: #dcadd6;
+    --sombreado: 0px 0px 20px #00000040;    
+}
+
+body {
+    color: #ffffff;
+    text-align: center;
+    font-size: .65em; 
+    padding: 1em 5%;  	
+}
+
+main {
+    margin: auto;
+	max-width: 45em;
+	display: flex;
+}
+
+#grid-container {
+    flex-grow: 1;
+	min-width: 7em;
+}
+
+/*Utilizamos a função clc() para tornar o tamanho da fonte responsivo*/
+h1 {
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	margin: .5em 0;    
+	font-size: calc(2vw + 0.75em);
+	font-weight: 200;
+	text-transform: uppercase;	
+    letter-spacing:-.05em;
+}
+
+h2 {
+    font-size: 2em;    
+}
+
+p {
+	font-size: .8em;	
+}
+
+section {
+	height: 7em;
+	border: .125rem solid;
+	border-radius: .25rem;	
+	line-height: 1.25;
+	margin-bottom: .5em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+section a {
+	text-decoration:none;
+	color: #ffffff;
+}
+
+span{
+	font-size:.80em;
+	position: absolute;
+	top: .3em;
+	left: .5em;	
+}
+
+.legenda_tabela {
+    font-size: .8em;
+	text-align: left;	
+	flex-basis: 13.5rem;
+	margin: -.25em 0 0 1em;
+}
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+    position: sticky;
+    top: 1em;
+}
+
+li{
+	flex-basis: auto;
+    line-height: 2;
+    margin-top: 2em;
+}
+
+li:before{
+	content: '▇';
+    display: inline-block;
+	width: 1.6em;
+	height: 1.5em;
+    box-shadow: var(--sombreado);
+	border: .200em solid;
+	border-radius: .125rem;	
+	margin-right: .6em;
+    padding-left: .6em;
+    padding-bottom: .65em;
+	position: relative;
+}
+
+table {
+	margin: auto;
+	position: relative;
+}
+
+table tbody a {
+	text-decoration:none;
+	color: #ffffff;
+}
+
+table caption {
+	min-height: max-content;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	top: 10em;
+	bottom: 10em;
+	font-size: calc(1.5vw + 0.75em);
+	margin: 1em auto 1em auto;
+}
+
+table thead tr {
+	height: 50px;
+	font-size: calc(0.8vw + 0.5em);
+	border-bottom: 2px solid #ffffff;
+	background-image: linear-gradient(to right, #70cbeb, 
+	#dcadd6,#a2d345,#3d9ee3, #f1b200, #eb8e8e,#4db6ac);
+}
+
+table tbody tr td {
+	font-size: large;	
+	text-align: left;   
+}
+/*https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/@media*/
+@supports (display:grid) {
+    @media only screen and (min-width: 96em) {
+        
+        body {
+			font-size: .65em;
+			padding: 2em;	
+		}
+
+        main {
+			max-width:130.5em;
+			display: block;
+		}
+		
+		#grid-container {
+			display: grid;
+			grid-template-columns: repeat(18, 7em);
+			grid-gap: .25em;	
+		}
+
+        .col-span18 {
+            grid-column: span 18;
+        }
+			
+		.col-span16 {
+			grid-column: span 16;
+		}
+			
+		.col-span10 {
+			grid-column: span 10;
+		}
+			
+		.col-span3 {
+			grid-column: span 3;
+		}
+			
+		.col-hidden {
+			display: block;
+			visibility: hidden;
+		}
+        
+        section {
+			margin: 0;
+		}
+			
+		section:hover {
+			transition: .2s;
+			transform: scale(2);
+			cursor: pointer;
+			z-index: 2;
+		}
+
+        .legenda_tabela {
+			font-size: 1.17em;
+			width: 100%;
+			margin: 2em 0;
+		}
+		
+		ul {
+			justify-content: center;
+		}
+		
+		li {
+			flex-basis: auto;
+			margin-bottom: 0;	
+		}
+		
+		li + li {
+			margin-left: 2em;	
+		}
+
+		table {
+			table-layout: fixed;
+			width: 100%;
+			border-collapse: collapse;
+			border: 1px solid white;
+			text-align: left;
+			box-shadow: var(--sombreado);
+		}
+		
+		table tbody tr:hover {
+			transition: .2s;
+			transform: scale(1);
+			cursor: pointer;
+			z-index: 2;
+		}
+
+		table thead tr {
+			color: #ffffff;
+			text-shadow: 2px 2px 4px #000000;
+		}
+    }
+}
+
+/*Grupos de elementos químicos*/
+.nao_metal {    
+    background-color: var(--nao_metal);
+    box-shadow: var(--sombreado);
+}
+
+.gas_nobre {
+    background-color: var(--gas_nobre);
+    box-shadow: var(--sombreado);
+}
+
+.metal_alcalino {
+    background-color: var(--metal_alcalino);
+    box-shadow: var(--sombreado);
+}
+
+.metal_alcalino_terroso {
+    background-color: var(--metal_alcalino_terroso);
+    box-shadow: var(--sombreado);
+}
+
+.semimetal {
+    background-color: var(--semimetal);
+    box-shadow: var(--sombreado);
+}
+
+.halogenio {
+    background-color: var(--halogenio);
+    box-shadow: var(--sombreado);
+}
+
+.outros_metais {
+    background-color: var(--outros_metais);
+    box-shadow: var(--sombreado);
+}
+
+.metal_de_transicao {
+    background-color: var(--metal_de_transicao);
+    box-shadow: var(--sombreado);
+}
+
+.lantanideo {
+    background-color: var(--lantanideo);
+    box-shadow: var(--sombreado);
+}
+
+.actinidio {
+    background-color: var(--actinidio);
+    box-shadow: var(--sombreado);
+}
+
+/*legenda da tabela*/
+.leg_nao_metal {
+    color: var(--nao_metal);
+}
+
+.leg_gas_nobre {
+    color: var(--gas_nobre);
+}
+
+.leg_metal_alcalino {
+    color: var(--metal_alcalino);
+}
+
+.leg_metal_alcalino_terroso {
+    color: var(--metal_alcalino_terroso);
+}
+
+.leg_semimetal {
+    color: var(--semimetal);
+}
+
+.leg_halogenio {
+    color: var(--halogenio);
+}
+
+.leg_outros_metais {
+    color: var(--outros_metais);
+}
+
+.leg_metal_de_transicao {
+    color: var(--metal_de_transicao);
+}
+
+.leg_lantanideo {
+    color: var(--lantanideo);
+}
+
+.leg_actinidio {
+    color: var(--actinidio);
+}

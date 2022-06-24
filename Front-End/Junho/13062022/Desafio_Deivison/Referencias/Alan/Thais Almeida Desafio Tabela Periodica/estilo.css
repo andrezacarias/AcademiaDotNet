@@ -1,0 +1,167 @@
+body {
+   background-color: #fef5e7;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   text-align: center;
+}
+h1 {
+   box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+h1:hover {
+   color: red;
+   cursor: pointer;
+}
+
+h2 {
+   margin:auto;
+   box-shadow: 0 5px 5px rgba(0,0,0,0.6);
+}
+
+h2:hover {
+   color: red;
+   cursor: pointer;
+}
+
+.table1 {
+   width: 100%;
+   height: 500px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.table2 {
+   width: 80%;
+   height: 50px;
+   margin: 80px 100px;
+   background-color: #ccc;
+}
+
+.amarelo {
+   background-color: #D1C200;
+}
+
+.amarelo:hover {
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+.laranja {
+   background-color: #D89F00;
+}
+
+.laranja:hover {
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+.rosa {
+   background-color: #FF007F;
+}
+
+.rosa:hover {
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+.cinza {
+   background-color: #86A999;
+}
+
+.cinza:hover {
+   cursor: pointer;
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.verde-escuro {
+   background-color: #4FBA7B;
+}
+
+.verde-escuro:hover {
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+.verde-claro {
+   background-color: #00EA02;
+}
+
+.verde-claro:hover {
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   cursor: pointer;
+}
+
+.azul-claro {
+   background-color: #02D6AC;
+}
+
+.azul-claro:hover {
+   cursor: pointer;
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.azul-escuro {
+   background-color: #5A8EDA;
+}
+
+.azul-escuro:hover {
+   cursor: pointer;
+   border: 1px solid black;
+   transform: scale(1.2); 
+   box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.rosa-claro {
+   background-color: #E58462;
+}
+
+.rosa-claro:hover {
+   border: 1px solid black;
+   transform: scale(1.2);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+   cursor: pointer;
+}
+
+.lilas {
+   background-color: #D598C0;
+}
+
+.lilas:hover {
+   cursor: pointer;
+   border: 1px solid black;
+   transform: scale(1.2);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cor {
+   background-color: #F7AFD0;
+}
+
+.cor:hover {
+   cursor: pointer;
+   border: 1px solid black;
+   transform: scale(1.2);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+ .mexer:hover {
+   border: 1px solid black;
+   transform: scale(1.0);
+}
