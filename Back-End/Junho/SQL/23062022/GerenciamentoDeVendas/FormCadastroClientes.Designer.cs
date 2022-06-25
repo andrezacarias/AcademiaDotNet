@@ -40,7 +40,6 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
-            this.btnListaCliente = new System.Windows.Forms.Button();
             this.btnHome1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +54,7 @@
             // 
             this.lblIdCliente.AutoSize = true;
             this.lblIdCliente.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdCliente.Location = new System.Drawing.Point(44, 61);
+            this.lblIdCliente.Location = new System.Drawing.Point(11, 60);
             this.lblIdCliente.Name = "lblIdCliente";
             this.lblIdCliente.Size = new System.Drawing.Size(61, 16);
             this.lblIdCliente.TabIndex = 0;
@@ -65,7 +64,7 @@
             // 
             this.lblCpf.AutoSize = true;
             this.lblCpf.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(66, 95);
+            this.lblCpf.Location = new System.Drawing.Point(15, 141);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(37, 16);
             this.lblCpf.TabIndex = 1;
@@ -75,7 +74,7 @@
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(65, 134);
+            this.lblNome.Location = new System.Drawing.Point(11, 85);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(38, 16);
             this.lblNome.TabIndex = 2;
@@ -85,7 +84,7 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(51, 169);
+            this.lblTelefone.Location = new System.Drawing.Point(11, 112);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(51, 16);
             this.lblTelefone.TabIndex = 3;
@@ -94,7 +93,7 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(63, 208);
+            this.lblEmail.Location = new System.Drawing.Point(15, 170);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(38, 13);
             this.lblEmail.TabIndex = 4;
@@ -102,35 +101,35 @@
             // 
             // tbIdCliente
             // 
-            this.tbIdCliente.Location = new System.Drawing.Point(111, 57);
+            this.tbIdCliente.Location = new System.Drawing.Point(78, 59);
             this.tbIdCliente.Name = "tbIdCliente";
-            this.tbIdCliente.Size = new System.Drawing.Size(242, 20);
+            this.tbIdCliente.Size = new System.Drawing.Size(50, 20);
             this.tbIdCliente.TabIndex = 5;
             // 
             // tbCPF
             // 
-            this.tbCPF.Location = new System.Drawing.Point(112, 95);
+            this.tbCPF.Location = new System.Drawing.Point(78, 137);
             this.tbCPF.Name = "tbCPF";
-            this.tbCPF.Size = new System.Drawing.Size(242, 20);
+            this.tbCPF.Size = new System.Drawing.Size(153, 20);
             this.tbCPF.TabIndex = 6;
             // 
             // tbNomeCliente
             // 
-            this.tbNomeCliente.Location = new System.Drawing.Point(112, 131);
+            this.tbNomeCliente.Location = new System.Drawing.Point(78, 85);
             this.tbNomeCliente.Name = "tbNomeCliente";
-            this.tbNomeCliente.Size = new System.Drawing.Size(242, 20);
+            this.tbNomeCliente.Size = new System.Drawing.Size(308, 20);
             this.tbNomeCliente.TabIndex = 7;
             // 
             // tbTelefone
             // 
-            this.tbTelefone.Location = new System.Drawing.Point(112, 169);
+            this.tbTelefone.Location = new System.Drawing.Point(78, 111);
             this.tbTelefone.Name = "tbTelefone";
-            this.tbTelefone.Size = new System.Drawing.Size(242, 20);
+            this.tbTelefone.Size = new System.Drawing.Size(124, 20);
             this.tbTelefone.TabIndex = 8;
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(111, 205);
+            this.tbEmail.Location = new System.Drawing.Point(78, 163);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(242, 20);
             this.tbEmail.TabIndex = 9;
@@ -148,27 +147,19 @@
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(513, 57);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(14, 481);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(104, 43);
             this.btnCadastrarCliente.TabIndex = 11;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
             // 
-            // btnListaCliente
-            // 
-            this.btnListaCliente.Location = new System.Drawing.Point(111, 417);
-            this.btnListaCliente.Name = "btnListaCliente";
-            this.btnListaCliente.Size = new System.Drawing.Size(145, 35);
-            this.btnListaCliente.TabIndex = 12;
-            this.btnListaCliente.Text = "Carregar Cadastro";
-            this.btnListaCliente.UseVisualStyleBackColor = true;
-            // 
             // btnHome1
             // 
-            this.btnHome1.Location = new System.Drawing.Point(513, 118);
+            this.btnHome1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome1.Location = new System.Drawing.Point(482, 481);
             this.btnHome1.Name = "btnHome1";
-            this.btnHome1.Size = new System.Drawing.Size(103, 44);
+            this.btnHome1.Size = new System.Drawing.Size(103, 43);
             this.btnHome1.TabIndex = 13;
             this.btnHome1.Text = "HOME";
             this.btnHome1.UseVisualStyleBackColor = true;
@@ -182,9 +173,9 @@
             this.Nome,
             this.Telefone,
             this.Email});
-            this.dataGridView1.Location = new System.Drawing.Point(54, 244);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 200);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(570, 167);
+            this.dataGridView1.Size = new System.Drawing.Size(571, 262);
             this.dataGridView1.TabIndex = 14;
             // 
             // IdCliente
@@ -216,12 +207,11 @@
             // 
             // FormCadastroClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 460);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(593, 536);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnHome1);
-            this.Controls.Add(this.btnListaCliente);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbEmail);
@@ -234,8 +224,10 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblCpf);
             this.Controls.Add(this.lblIdCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroClientes";
             this.Text = "FormCadastroClientes";
+            this.Load += new System.EventHandler(this.FormCadastroClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,7 +248,6 @@
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrarCliente;
-        private System.Windows.Forms.Button btnListaCliente;
         private System.Windows.Forms.Button btnHome1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;

@@ -16,5 +16,10 @@ namespace GerenciamentoDeVendas
         {
             InitializeComponent();
         }
+
+        private void FormCadastroClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

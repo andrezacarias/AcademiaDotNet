@@ -64,6 +64,12 @@
     <Compile Include="FormCadastroProdutos.Designer.cs">
       <DependentUpon>FormCadastroProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCadastroVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroVendas.Designer.cs">
+      <DependentUpon>FormCadastroVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroProdutos.resx">
       <DependentUpon>FormCadastroProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroVendas.resx">
+      <DependentUpon>FormCadastroVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

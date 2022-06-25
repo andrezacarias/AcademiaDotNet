@@ -1,0 +1,272 @@
+Aula 01
+SELECT 'Olá mundo!'
+
+SELECT *
+FROM olist.cliente
+
+SELECT idCliente, descCidade
+FROM olist.cliente
+
+SELECT idV FROM olist.cliente WHERE descEstado='MG'
+
+SELECT idVendedor FROM olist.vendedor WHERE descEstado = 'RJ'
+
+SELECT * FROM olist.produto WHERE descCategoria = 'bebes'
+
+SELECT * FROM olist.cliente WHERE  descEstado = 'SP' and  descCidade = 'sao paulo'
+
+SELECT idCliente FROM olist.cliente WHERE descEstado = 'SP'
+
+SELECT * FROM olist.Vendedor WHERE descCidade = 'rio de janeiro'  or descEstado = 'SP' or descCidade = 'vitoria'
+
+SELECT * FROM olist.produto where (descCategoria = 'bebes' or descCategoria = 'perfumaria' or descCategoria = 'artes') and vlAlturaCm >5
+
+SELECT * 
+FROM olist.produto 
+WHERE descCategoria IN ('bebes' , 'perfumaria' , 'artes')
+AND vlAlturaCm >5
+
+SELECT * FROM olist.item_pedido WHERE idItemPedido > 2
+
+SELECT * FROM olist.item_pedido WHERE vlFrete>vlItem
+
+SELECT * FROM olist.pedido WHERE descStatusPedido NOT IN ('delivered' , 'shipped')
+
+SELECT * FROM olist.pedido WHERE dtEntregaEstimadaPedido < dtPedidoEntregue
+
+SELECT * , 
+            datediff(dtPedidoEntregue,dtEntregaEstimadaPedido) as DiasAntesEntrega
+FROM olist.pedido WHERE datediff(dtPedidoEntregue,dtEntregaEstimadaPedido) <=-2
+
+Aula02
+
+select *,
+        case when  descCidade = 'sao paulo' then 'paulistano' 
+            when descCidade = 'rio de janeiro' then 'carioca'
+            when descCidade = 'curitiba' then 'curitibano'
+          else 'que se foda'
+        end as descNaturalidade,
+        case when descEstado in('SP','RJ','MG') then 'SUDESTE'
+              when descEstado in ('RS', 'PR', 'SC') then 'SUL'
+          else 'foda-se'
+        end as descRegiao
+from  olist.cliente
+
+select *,
+      month(dtPedidoAprovado) as nrMes,
+      year(dtPedidoAprovado) as nrAno,
+      case when dtentregaEstimadaPedido < dtPedidoEntregue then 'atrasada'
+      else 'em dia'
+      end as descStatusAtraso
+      from olist.pedido
+where month(dtPedidoAprovado) =12
+and year(dtPedidoAprovado) =2017
+--and dtentregaEstimadaPedido < dtPedidoEntregue
+
+select *,
+        round(vlPagamento / nrParcelas,2) as vlParcela
+from olist.pagamento_pedido
+where nrParcelas >2 and
+round(vlPagamento / nrParcelas,2)  <20
+
+select *,
+        case when  descCategoria in( 'alimentos','alimentos_bebidas') then 'alimentos' 
+            when descCategoria in ('artes','artes_e_artesanato') then 'artes'
+            when descCategoria in ('construcao_ferramentas_construcao','construcao_ferramentas_ferramentas',
+            'construcao_ferramentas_iluminacao','construcao_ferramentas_jardim','casa_construcao')  
+            then 'construcao'
+          else 'que se foda'
+        end as descNovaCategoria
+        
+from  olist.produto
+
+select qtFotos
+from olist.produto
+
+select *,
+        case when  vlPesoGramas <2000 then 'leve'
+            when  vlPesoGramas < 5000 then 'medio'
+            when vlPesoGramas < 10000 then 'pesado'
+            --when vlPesoGramas >10000 then 'muito pesado'
+            else 'muito pesado'
+            end as descPeso
+            from olist.produto
+
+select *,
+        case when  descCategoria in( 'alimentos','alimentos_bebidas') then 'alimentos' 
+            when descCategoria in ('artes','artes_e_artesanato') then 'artes'
+            when descCategoria like 'construcao' 
+            then 'construcao'
+          else descCategoria
+        end as descNovaCategoria
+        
+from  olist.produto
+
+select count(*),
+        count(distinct idProduto),
+        count(distinct descCategoria)
+from olist.produto
+
+select count(*) as nrTotalItens,
+        round(count(distinct idPedido),2)  nrTotalPedidos,
+        round(count(*)/count(distinct idPedido),2) as nrItensPorPedido,
+        round(sum(vlFrete),2) nrTotalFrete,
+        round(sum(vlFrete) / count(*),2) as vlFreteItem
+        
+
+from olist.item_pedido
+
+select count(*) as SaoPaulo
+from olist.cliente
+where descEstado ='SP'
+
+select descEstado, count(*) as ClientesEstado
+from olist.cliente
+group by descEstado 
+
+select year(dtPedidoEntregue),
+          month(dtPedidoEntregue),
+          count(*)
+          
+from olist.pedido
+where dtPedidoEntregue is not null
+group by year(dtPedidoEntregue),month(dtPedidoEntregue) 
+order by year(dtPedidoEntregue),month(dtPedidoEntregue) 
+
+select idPedido,
+      round(sum(vlFrete),2) as ValorAscendente,
+      min(vlFrete) ,
+      max(vlFrete) 
+from olist.item_pedido
+
+group by idPedido
+order by round(sum(vlFrete),2) asc 
+
+select idCliente,
+        count(*)
+      from olist.pedido
+      
+      group by idCliente
+      order by count(*) desc
+
+Aula03
+
+select 
+date(dtPedidoAprovado), 
+count(idPedido) as quantidadePedidos
+
+from olist.pedido
+
+where year(dtPedidoAprovado)=2017
+and month(dtPedidoAprovado)=11
+
+group by date(dtPedidoAprovado)
+order by count(idPedido) desc
+
+limit 5
+
+select date(dtPedidoAprovado),
+        count(*)  as MelhorBlack
+
+from olist.pedido
+
+where dayofweek(dtPedidoAprovado)=6
+and month(dtPedidoAprovado)=11
+
+group by date(dtPedidoAprovado) 
+order by dtPedidoAprovado desc
+
+select descTipoPagamento,
+      round(avg(vlPagamento),2) as Media
+
+    
+from olist.pagamento_pedido
+
+group by descTipoPagamento
+
+select descCategoria,
+      round(avg(vlPesoGramas)/1000,2) as pesoMedio
+
+from olist.produto
+
+group by descCategoria
+order by round(avg(vlPesoGramas)/1000,2) desc
+
+select * 
+from olist.pedido as t1
+
+left join olist.cliente as t2
+on t1.idCliente = t2.idCliente
+
+select 
+        T2.descCategoria,
+        count(T1.idPedido) as qtdVenda,
+        count(distinct T1.idPedido) as qtdPedido,
+        round(sum (T1.vlItem),2) as valorReceita,
+        round(round(sum (T1.vlItem),2)/count(T1.idPedido),2) as vlMedio
+        
+from olist.item_pedido as T1
+
+left join olist.produto as T2
+on T1.idProduto = T2.idProduto
+
+left join olist.pedido as t3
+on T1.idPedido = T3.idPedido
+
+where year(T3.dtPedidoAprovado) =2017
+and month(T3.dtPedidoAprovado) =11
+
+group by T2.descCategoria
+order by count(T1.idPedido) desc
+
+limit 5
+
+select date_format(t3.dtPedidoAprovado, 'y-M') as dataAprovado,
+        count(t1.idPedido)
+
+from olist.item_pedido as t1
+
+left join olist.produto as t2
+on t1.idProduto = t2.idProduto
+
+left join olist.pedido as t3
+on t1.idPedido = t3.idPedido
+
+where t2.descCategoria = 'bebes'
+
+group by date_format(t3.dtPedidoAprovado, 'y-M')
+order by date_format(t3.dtPedidoAprovado, 'y-M')
+
+select date_format(t3.dtPedidoAprovado, 'y-M') as dataAprovado,
+        count(t1.idPedido)
+
+from olist.item_pedido as t1
+
+left join olist.produto as t2
+on t1.idProduto = t2.idProduto
+
+left join olist.pedido as t3
+on t1.idPedido = t3.idPedido
+
+where t2.descCategoria = 'bebes'
+
+group by date_format(t3.dtPedidoAprovado, 'y-M')
+order by date_format(t3.dtPedidoAprovado, 'y-M')
+
+select T3.descEstado,
+        round(avg(T1.vlFrete),2) maiorFrete
+
+from olist.item_pedido T1
+
+left join olist.pedido as T2
+on T1.idPedido = T2.idPedido
+
+left join olist.cliente as T3
+on T2.idCliente = T3.idCliente
+
+group by T3.descEstado
+order by avg(T1.vlFrete) desc
+
+select *
+
+from olist.item_pedido

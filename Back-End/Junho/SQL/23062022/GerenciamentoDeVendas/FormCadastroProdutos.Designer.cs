@@ -40,7 +40,6 @@
             this.tbEstoque = new System.Windows.Forms.TextBox();
             this.lblCadastroProdutos = new System.Windows.Forms.Label();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
-            this.btnListaProduto = new System.Windows.Forms.Button();
             this.btnHomeProduto = new System.Windows.Forms.Button();
             this.dgVendas = new System.Windows.Forms.DataGridView();
             this.dgIdVenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,9 +73,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(31, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Nome do Produto:";
+            this.label3.Text = "Produto:";
             // 
             // label4
             // 
@@ -150,15 +149,6 @@
             this.btnCadastrarProduto.Text = "Cadastrar Produto";
             this.btnCadastrarProduto.UseVisualStyleBackColor = true;
             // 
-            // btnListaProduto
-            // 
-            this.btnListaProduto.Location = new System.Drawing.Point(412, 133);
-            this.btnListaProduto.Name = "btnListaProduto";
-            this.btnListaProduto.Size = new System.Drawing.Size(75, 23);
-            this.btnListaProduto.TabIndex = 12;
-            this.btnListaProduto.Text = "Ir para Lista";
-            this.btnListaProduto.UseVisualStyleBackColor = true;
-            // 
             // btnHomeProduto
             // 
             this.btnHomeProduto.Location = new System.Drawing.Point(412, 191);
@@ -179,7 +169,7 @@
             this.dgEstoque});
             this.dgVendas.Location = new System.Drawing.Point(34, 243);
             this.dgVendas.Name = "dgVendas";
-            this.dgVendas.Size = new System.Drawing.Size(544, 211);
+            this.dgVendas.Size = new System.Drawing.Size(544, 287);
             this.dgVendas.TabIndex = 14;
             // 
             // dgIdVenda
@@ -209,12 +199,10 @@
             // 
             // FormCadastroProdutos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 483);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.ClientSize = new System.Drawing.Size(618, 566);
             this.Controls.Add(this.dgVendas);
             this.Controls.Add(this.btnHomeProduto);
-            this.Controls.Add(this.btnListaProduto);
             this.Controls.Add(this.btnCadastrarProduto);
             this.Controls.Add(this.lblCadastroProdutos);
             this.Controls.Add(this.tbEstoque);
@@ -227,6 +215,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblIdProdutos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroProdutos";
             this.Text = "FormCadastroProdutos";
             ((System.ComponentModel.ISupportInitialize)(this.dgVendas)).EndInit();
@@ -249,7 +238,6 @@
         private System.Windows.Forms.TextBox tbEstoque;
         private System.Windows.Forms.Label lblCadastroProdutos;
         private System.Windows.Forms.Button btnCadastrarProduto;
-        private System.Windows.Forms.Button btnListaProduto;
         private System.Windows.Forms.Button btnHomeProduto;
         private System.Windows.Forms.DataGridView dgVendas;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgIdVenda;

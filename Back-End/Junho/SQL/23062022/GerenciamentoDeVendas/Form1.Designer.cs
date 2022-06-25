@@ -34,6 +34,7 @@
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "Cadastrar Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnProdutos
             // 
@@ -54,6 +56,7 @@
             this.btnProdutos.TabIndex = 1;
             this.btnProdutos.Text = "Cadastrar Produtos";
             this.btnProdutos.UseVisualStyleBackColor = true;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
             // btnConsultar
             // 
@@ -72,6 +75,7 @@
             this.btnVendas.TabIndex = 3;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click_1);
             // 
             // btnSair
             // 
@@ -81,6 +85,7 @@
             this.btnSair.TabIndex = 4;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click_1);
             // 
             // panel1
             // 
@@ -94,17 +99,27 @@
             this.panel1.Size = new System.Drawing.Size(145, 538);
             this.panel1.TabIndex = 5;
             // 
+            // panel2
+            // 
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(172, 13);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(592, 536);
+            this.panel2.TabIndex = 6;
+            // 
             // Tela01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(657, 580);
+            this.ClientSize = new System.Drawing.Size(776, 580);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Tela01";
             this.Text = "Gerenciamento de Vendas";
+            this.Load += new System.EventHandler(this.Tela01_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -118,6 +133,7 @@
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
