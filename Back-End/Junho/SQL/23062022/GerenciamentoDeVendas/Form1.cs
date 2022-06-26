@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GerenciamentoDeVendas
 {
     public partial class Tela01 : Form
@@ -53,11 +54,7 @@ namespace GerenciamentoDeVendas
             }
 
         }
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("RHINO STORE AGRADECE SUA CONFIANÇA!! \n VOLTE SEMPRE!");
-            Application.Exit();
-        }
+        
         private void Tela01_Load(object sender, EventArgs e)
         {
 
@@ -80,8 +77,14 @@ namespace GerenciamentoDeVendas
         private void btnSair_Click_1(object sender, EventArgs e)
         {
             MessageBox.Show("RHINO STORE AGRADECE SUA CONFIANÇA!! \n VOLTE SEMPRE!");
+            Banco b = new Banco();
+            b.fecharConexao();
             Application.Exit();
         }
-               
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            Banco c = new Banco();
+            c.abrirConexao();
+        }
     }
 }

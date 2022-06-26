@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblIdCliente = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
@@ -40,14 +41,19 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
-            this.btnHome1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cpf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnHomeCliente = new System.Windows.Forms.Button();
+            this.dgCadastroCliente = new System.Windows.Forms.DataGridView();
+            this.idClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeCompletoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rhinoStore_DBDataSet = new GerenciamentoDeVendas.RhinoStore_DBDataSet();
+            this.clienteTableAdapter = new GerenciamentoDeVendas.RhinoStore_DBDataSetTableAdapters.ClienteTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCadastroCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // lblIdCliente
@@ -146,6 +152,7 @@
             // 
             // btnCadastrarCliente
             // 
+            this.btnCadastrarCliente.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.Location = new System.Drawing.Point(14, 481);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
@@ -153,65 +160,86 @@
             this.btnCadastrarCliente.TabIndex = 11;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = true;
+            this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarCliente_Click);
             // 
-            // btnHome1
+            // btnHomeCliente
             // 
-            this.btnHome1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome1.Location = new System.Drawing.Point(482, 481);
-            this.btnHome1.Name = "btnHome1";
-            this.btnHome1.Size = new System.Drawing.Size(103, 43);
-            this.btnHome1.TabIndex = 13;
-            this.btnHome1.Text = "HOME";
-            this.btnHome1.UseVisualStyleBackColor = true;
+            this.btnHomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomeCliente.Location = new System.Drawing.Point(482, 481);
+            this.btnHomeCliente.Name = "btnHomeCliente";
+            this.btnHomeCliente.Size = new System.Drawing.Size(103, 43);
+            this.btnHomeCliente.TabIndex = 13;
+            this.btnHomeCliente.Text = "HOME";
+            this.btnHomeCliente.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgCadastroCliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdCliente,
-            this.Cpf,
-            this.Nome,
-            this.Telefone,
-            this.Email});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 200);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(571, 262);
-            this.dataGridView1.TabIndex = 14;
+            this.dgCadastroCliente.AutoGenerateColumns = false;
+            this.dgCadastroCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCadastroCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idClienteDataGridViewTextBoxColumn,
+            this.nomeCompletoDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.cpfDataGridViewTextBoxColumn,
+            this.celularDataGridViewTextBoxColumn});
+            this.dgCadastroCliente.DataSource = this.clienteBindingSource;
+            this.dgCadastroCliente.Location = new System.Drawing.Point(14, 200);
+            this.dgCadastroCliente.Name = "dgCadastroCliente";
+            this.dgCadastroCliente.Size = new System.Drawing.Size(571, 262);
+            this.dgCadastroCliente.TabIndex = 14;
+            this.dgCadastroCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCadastroCliente_CellContentClick);
             // 
-            // IdCliente
+            // idClienteDataGridViewTextBoxColumn
             // 
-            this.IdCliente.HeaderText = "IdCliente";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.Width = 60;
+            this.idClienteDataGridViewTextBoxColumn.DataPropertyName = "idCliente";
+            this.idClienteDataGridViewTextBoxColumn.HeaderText = "idCliente";
+            this.idClienteDataGridViewTextBoxColumn.Name = "idClienteDataGridViewTextBoxColumn";
             // 
-            // Cpf
+            // nomeCompletoDataGridViewTextBoxColumn
             // 
-            this.Cpf.HeaderText = "CPF";
-            this.Cpf.Name = "Cpf";
+            this.nomeCompletoDataGridViewTextBoxColumn.DataPropertyName = "nomeCompleto";
+            this.nomeCompletoDataGridViewTextBoxColumn.HeaderText = "nomeCompleto";
+            this.nomeCompletoDataGridViewTextBoxColumn.Name = "nomeCompletoDataGridViewTextBoxColumn";
             // 
-            // Nome
+            // emailDataGridViewTextBoxColumn
             // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             // 
-            // Telefone
+            // cpfDataGridViewTextBoxColumn
             // 
-            this.Telefone.HeaderText = "Telefone:";
-            this.Telefone.Name = "Telefone";
+            this.cpfDataGridViewTextBoxColumn.DataPropertyName = "cpf";
+            this.cpfDataGridViewTextBoxColumn.HeaderText = "cpf";
+            this.cpfDataGridViewTextBoxColumn.Name = "cpfDataGridViewTextBoxColumn";
             // 
-            // Email
+            // celularDataGridViewTextBoxColumn
             // 
-            this.Email.HeaderText = "E-mail";
-            this.Email.Name = "Email";
-            this.Email.Width = 170;
+            this.celularDataGridViewTextBoxColumn.DataPropertyName = "celular";
+            this.celularDataGridViewTextBoxColumn.HeaderText = "celular";
+            this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.rhinoStore_DBDataSet;
+            // 
+            // rhinoStore_DBDataSet
+            // 
+            this.rhinoStore_DBDataSet.DataSetName = "RhinoStore_DBDataSet";
+            this.rhinoStore_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
             // 
             // FormCadastroClientes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(593, 536);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnHome1);
+            this.Controls.Add(this.dgCadastroCliente);
+            this.Controls.Add(this.btnHomeCliente);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbEmail);
@@ -228,7 +256,9 @@
             this.Name = "FormCadastroClientes";
             this.Text = "FormCadastroClientes";
             this.Load += new System.EventHandler(this.FormCadastroClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCadastroCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,12 +278,15 @@
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrarCliente;
-        private System.Windows.Forms.Button btnHome1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cpf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.Button btnHomeCliente;
+        private System.Windows.Forms.DataGridView dgCadastroCliente;
+        private RhinoStore_DBDataSet rhinoStore_DBDataSet;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private RhinoStore_DBDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idClienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeCompletoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpfDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn celularDataGridViewTextBoxColumn;
     }
 }

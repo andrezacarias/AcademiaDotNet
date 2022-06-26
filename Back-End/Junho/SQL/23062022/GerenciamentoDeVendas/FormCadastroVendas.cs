@@ -16,5 +16,13 @@ namespace GerenciamentoDeVendas
         {
             InitializeComponent();
         }
+       
+
+        private void FormCadastroVendas_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'rhinoStore_DBDataSet3.vendas'. Você pode movê-la ou removê-la conforme necessário.
+            this.vendasTableAdapter.Fill(this.rhinoStore_DBDataSet3.vendas);
+
+        }
     }
 }

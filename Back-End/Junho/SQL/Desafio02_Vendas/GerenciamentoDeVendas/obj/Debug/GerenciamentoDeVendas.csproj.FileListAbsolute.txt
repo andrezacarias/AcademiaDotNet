@@ -1,0 +1,14 @@
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\bin\Debug\GerenciamentoDeVendas.exe.config
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\bin\Debug\GerenciamentoDeVendas.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\bin\Debug\GerenciamentoDeVendas.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.Tela01.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.FormCadastroClientes.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.FormCadastroProdutos.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.Properties.Resources.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.exe
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.pdb
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.FormCadastroVendas.resources

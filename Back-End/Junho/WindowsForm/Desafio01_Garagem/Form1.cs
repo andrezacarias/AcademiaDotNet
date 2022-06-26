@@ -145,6 +145,7 @@ namespace Desafio01_Garagem
                     v = new Veiculo(gambiarra, 
                                    dgEstacionados.Rows[i].Cells[1].Value.ToString(),
                                    gambiarra2);
+                   
                     Veiculo.gravarArquivoEntrada(v);
                 }
                 c.gravarArquivoSaida(c);
