@@ -72,7 +72,7 @@ namespace GerenciamentoDeVendas
         private void btnVendas_Click_1(object sender, EventArgs e)
         {
             ActiveButton(btnVendas);
-            FormShow(new FormCadastroVendas());
+            FormShow(new FormCarrinho());
         }
         private void btnSair_Click_1(object sender, EventArgs e)
         {

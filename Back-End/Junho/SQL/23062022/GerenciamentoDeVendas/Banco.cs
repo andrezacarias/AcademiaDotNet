@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace GerenciamentoDeVendas
 {
@@ -32,6 +33,7 @@ namespace GerenciamentoDeVendas
             }
             catch (Exception ex)
             {
+                
                 //faz algo se deu erro
                 return null;
             }
@@ -48,7 +50,7 @@ namespace GerenciamentoDeVendas
                 return;
             }
         }
+        
 
-       
-    }
+}
 }

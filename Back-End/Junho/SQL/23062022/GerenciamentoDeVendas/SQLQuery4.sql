@@ -1,0 +1,3 @@
+INSERT INTO produtos VALUES ('PAÇOCA', '5.00', 5000, 123456789);
+
+SELECT * FROM produtos;

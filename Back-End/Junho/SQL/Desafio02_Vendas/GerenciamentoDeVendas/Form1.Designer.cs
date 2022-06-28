@@ -30,7 +30,7 @@
         {
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProdutos = new System.Windows.Forms.Button();
-            this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.btnVendas = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -58,14 +58,15 @@
             this.btnProdutos.UseVisualStyleBackColor = true;
             this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
             // 
-            // btnConsultar
+            // btnConectar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(17, 432);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(115, 31);
-            this.btnConsultar.TabIndex = 2;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConectar.Location = new System.Drawing.Point(17, 432);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(115, 31);
+            this.btnConectar.TabIndex = 2;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyleBackColor = true;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // btnVendas
             // 
@@ -73,7 +74,7 @@
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.Size = new System.Drawing.Size(115, 26);
             this.btnVendas.TabIndex = 3;
-            this.btnVendas.Text = "Vendas";
+            this.btnVendas.Text = "Carrinho";
             this.btnVendas.UseVisualStyleBackColor = true;
             this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click_1);
             // 
@@ -93,7 +94,7 @@
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.btnProdutos);
             this.panel1.Controls.Add(this.btnVendas);
-            this.panel1.Controls.Add(this.btnConsultar);
+            this.panel1.Controls.Add(this.btnConectar);
             this.panel1.Location = new System.Drawing.Point(22, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(145, 538);
@@ -129,7 +130,7 @@
 
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnProdutos;
-        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.Button btnVendas;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Panel panel1;

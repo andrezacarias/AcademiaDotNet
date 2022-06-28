@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GerenciamentoDeVendas
 {
@@ -15,34 +16,68 @@ namespace GerenciamentoDeVendas
         public FormCadastroClientes()
         {
             InitializeComponent();
-
-
-
         }
 
         private void FormCadastroClientes_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'rhinoStore_DBDataSet.Cliente'. Você pode movê-la ou removê-la conforme necessário.
-            this.clienteTableAdapter.Fill(this.rhinoStore_DBDataSet.Cliente);
+            // TODO: esta linha de código carrega dados na tabela 'rhinoStore_DBDataSet15.Clientes'. Você pode movê-la ou removê-la conforme necessário.
+            this.clientesTableAdapter.Fill(this.rhinoStore_DBDataSet15.Clientes);
 
         }
 
         private void btnCadastrarCliente_Click(object sender, EventArgs e)
         {
-            
-            Cliente c = new Cliente(tbNomeCliente.Text, tbEmail.Text, tbCPF.Text, tbTelefone.Text);
-            bool ok = c.gravarCliente();
-            if(ok) {
-                MessageBox.Show("Cadastrado com sucesso!!!");
-                this.clienteTableAdapter.Fill(this.rhinoStore_DBDataSet.Cliente);
-            }
-           
-
+            Cliente c = new Cliente(tbNome.Text, tbTelefone.Text, tbEmail.Text);
+            MessageBox.Show(tbNome.Text + tbTelefone.Text + tbEmail.Text) ;
+            c.gravarCliente();
+            this.clientesTableAdapter.Fill(this.rhinoStore_DBDataSet15.Clientes);
         }
 
-        private void dgCadastroCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnApagarCliente_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Quero apagar");
+            //Cliente a = new Cliente(tbNome.Text, tbTelefone.Text, tbEmail.Text);
+            //apagarCliente(tbNome.Text, tbTelefone.Text, tbEmail.Text);
+        }
+
+        //private void apagarCliente(string text1, string text2, string text3)
+        //{
+            
+        //}
+
+        //private void apagarCliente(object sender, EventArgs e)
+        //{
+        //    //lembre que o remover está relacionado com ListView e a região
+        //    //selecionada
+
+
+        //    try
+        //    {
+        //        //MessageBox.Show(listView_medidasGlicemias.SelectedItems[0].Text);
+                
+
+        //        //gerar sentenças SQL
+        //        string sqlTexto = "DELETE FROM clientes WHERE idCliente = @idCliente";
+
+        //        SqlCommand comando = new SqlCommand(sqlTexto);
+        //        comando.Parameters.AddWithValue("@idCliente", idClienteDataGridViewTextBoxColumn);
+
+        //        //executar sentença SQL
+        //        comando.ExecuteNonQuery();
+        //    }
+        //    catch (Exception error)
+        //    {
+        //        MessageBox.Show(error.Message);
+        //    }
+
+        //    this.clientesTableAdapter.Fill(this.rhinoStore_DBDataSet15.Clientes);
+
+        //}
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
     }
 }
+

@@ -28,24 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbItemVenda = new System.Windows.Forms.TextBox();
+            this.tbIdProduto = new System.Windows.Forms.TextBox();
+            this.tbQuantidade = new System.Windows.Forms.TextBox();
+            this.tbIdVenda = new System.Windows.Forms.TextBox();
+            this.tbValorTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IdItemVenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdVenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgVenda = new System.Windows.Forms.DataGridView();
+            this.rhinoStore_DBDataSet = new GerenciamentoDeVendas.RhinoStore_DBDataSet();
+            this.rhinoStoreDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rhinoStore_DBDataSet3 = new GerenciamentoDeVendas.RhinoStore_DBDataSet3();
+            this.vendasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vendasTableAdapter = new GerenciamentoDeVendas.RhinoStore_DBDataSet3TableAdapters.vendasTableAdapter();
+            this.idVendasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codigoClienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStoreDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,40 +101,40 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Valor Total:";
             // 
-            // textBox1
+            // tbItemVenda
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.tbItemVenda.Location = new System.Drawing.Point(113, 83);
+            this.tbItemVenda.Name = "tbItemVenda";
+            this.tbItemVenda.Size = new System.Drawing.Size(100, 20);
+            this.tbItemVenda.TabIndex = 6;
             // 
-            // textBox2
+            // tbIdProduto
             // 
-            this.textBox2.Location = new System.Drawing.Point(113, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.tbIdProduto.Location = new System.Drawing.Point(113, 110);
+            this.tbIdProduto.Name = "tbIdProduto";
+            this.tbIdProduto.Size = new System.Drawing.Size(100, 20);
+            this.tbIdProduto.TabIndex = 7;
             // 
-            // textBox3
+            // tbQuantidade
             // 
-            this.textBox3.Location = new System.Drawing.Point(113, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.tbQuantidade.Location = new System.Drawing.Point(113, 172);
+            this.tbQuantidade.Name = "tbQuantidade";
+            this.tbQuantidade.Size = new System.Drawing.Size(100, 20);
+            this.tbQuantidade.TabIndex = 8;
             // 
-            // textBox4
+            // tbIdVenda
             // 
-            this.textBox4.Location = new System.Drawing.Point(113, 143);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.tbIdVenda.Location = new System.Drawing.Point(113, 143);
+            this.tbIdVenda.Name = "tbIdVenda";
+            this.tbIdVenda.Size = new System.Drawing.Size(100, 20);
+            this.tbIdVenda.TabIndex = 9;
             // 
-            // textBox6
+            // tbValorTotal
             // 
-            this.textBox6.Location = new System.Drawing.Point(113, 204);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.tbValorTotal.Location = new System.Drawing.Point(113, 204);
+            this.tbValorTotal.Name = "tbValorTotal";
+            this.tbValorTotal.Size = new System.Drawing.Size(100, 20);
+            this.tbValorTotal.TabIndex = 11;
             // 
             // label7
             // 
@@ -138,56 +146,74 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Cadastro de Vendas";
             // 
-            // dataGridView1
+            // dgVenda
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdItemVenda,
-            this.IdProduto,
-            this.IdVenda,
-            this.Quantidade,
-            this.ValorTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(34, 255);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(541, 220);
-            this.dataGridView1.TabIndex = 13;
+            this.dgVenda.AutoGenerateColumns = false;
+            this.dgVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idVendasDataGridViewTextBoxColumn,
+            this.codigoClienteDataGridViewTextBoxColumn,
+            this.valorTotalDataGridViewTextBoxColumn});
+            this.dgVenda.DataSource = this.vendasBindingSource;
+            this.dgVenda.Location = new System.Drawing.Point(34, 255);
+            this.dgVenda.Name = "dgVenda";
+            this.dgVenda.Size = new System.Drawing.Size(541, 220);
+            this.dgVenda.TabIndex = 13;
             // 
-            // IdItemVenda
+            // rhinoStore_DBDataSet
             // 
-            this.IdItemVenda.HeaderText = "Id Item Venda";
-            this.IdItemVenda.Name = "IdItemVenda";
+            this.rhinoStore_DBDataSet.DataSetName = "RhinoStore_DBDataSet";
+            this.rhinoStore_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // IdProduto
+            // rhinoStoreDBDataSetBindingSource
             // 
-            this.IdProduto.HeaderText = "Id Produto";
-            this.IdProduto.Name = "IdProduto";
+            this.rhinoStoreDBDataSetBindingSource.DataSource = this.rhinoStore_DBDataSet;
+            this.rhinoStoreDBDataSetBindingSource.Position = 0;
             // 
-            // IdVenda
+            // rhinoStore_DBDataSet3
             // 
-            this.IdVenda.HeaderText = "Id Venda";
-            this.IdVenda.Name = "IdVenda";
+            this.rhinoStore_DBDataSet3.DataSetName = "RhinoStore_DBDataSet3";
+            this.rhinoStore_DBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Quantidade
+            // vendasBindingSource
             // 
-            this.Quantidade.HeaderText = "Column1";
-            this.Quantidade.Name = "Quantidade";
+            this.vendasBindingSource.DataMember = "vendas";
+            this.vendasBindingSource.DataSource = this.rhinoStore_DBDataSet3;
             // 
-            // ValorTotal
+            // vendasTableAdapter
             // 
-            this.ValorTotal.HeaderText = "Valor Total";
-            this.ValorTotal.Name = "ValorTotal";
+            this.vendasTableAdapter.ClearBeforeFill = true;
+            // 
+            // idVendasDataGridViewTextBoxColumn
+            // 
+            this.idVendasDataGridViewTextBoxColumn.DataPropertyName = "idVendas";
+            this.idVendasDataGridViewTextBoxColumn.HeaderText = "idVendas";
+            this.idVendasDataGridViewTextBoxColumn.Name = "idVendasDataGridViewTextBoxColumn";
+            this.idVendasDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codigoClienteDataGridViewTextBoxColumn
+            // 
+            this.codigoClienteDataGridViewTextBoxColumn.DataPropertyName = "codigoCliente";
+            this.codigoClienteDataGridViewTextBoxColumn.HeaderText = "codigoCliente";
+            this.codigoClienteDataGridViewTextBoxColumn.Name = "codigoClienteDataGridViewTextBoxColumn";
+            // 
+            // valorTotalDataGridViewTextBoxColumn
+            // 
+            this.valorTotalDataGridViewTextBoxColumn.DataPropertyName = "valorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.HeaderText = "valorTotal";
+            this.valorTotalDataGridViewTextBoxColumn.Name = "valorTotalDataGridViewTextBoxColumn";
             // 
             // FormCadastroVendas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(587, 514);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgVenda);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbValorTotal);
+            this.Controls.Add(this.tbIdVenda);
+            this.Controls.Add(this.tbQuantidade);
+            this.Controls.Add(this.tbIdProduto);
+            this.Controls.Add(this.tbItemVenda);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -196,7 +222,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroVendas";
             this.Text = "FormCadastroVendas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FormCadastroVendas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStoreDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,17 +240,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbItemVenda;
+        private System.Windows.Forms.TextBox tbIdProduto;
+        private System.Windows.Forms.TextBox tbQuantidade;
+        private System.Windows.Forms.TextBox tbIdVenda;
+        private System.Windows.Forms.TextBox tbValorTotal;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdItemVenda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdProduto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdVenda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
+        private System.Windows.Forms.DataGridView dgVenda;
+        private System.Windows.Forms.BindingSource rhinoStoreDBDataSetBindingSource;
+        private RhinoStore_DBDataSet rhinoStore_DBDataSet;
+        private RhinoStore_DBDataSet3 rhinoStore_DBDataSet3;
+        private System.Windows.Forms.BindingSource vendasBindingSource;
+        private RhinoStore_DBDataSet3TableAdapters.vendasTableAdapter vendasTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idVendasDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoClienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valorTotalDataGridViewTextBoxColumn;
     }
 }

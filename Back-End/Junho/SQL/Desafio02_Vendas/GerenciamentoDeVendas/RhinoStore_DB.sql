@@ -3,7 +3,8 @@ CREATE DATABASE RhinoStore_DB;
 USE RhinoStore_DB;
 --criando tabela Cliente
 CREATE TABLE Cliente (
-  idCliente INT PRIMARY KEY NOT NULL,
+  idCliente INT IDENTITY
+  PRIMARY KEY NOT NULL,
   nomeCompleto VARCHAR(150) NOT NULL,
   email VARCHAR (50) NOT NULL,
   cpf VARCHAR(14) NOT NULL,
@@ -53,6 +54,6 @@ REFERENCES Produto (idProduto)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 );
-INSERT into Cliente VALUES (1,'André Zacarias', 'a.andrezacarias@gmail','19488832587', '011954152815');
+INSERT into Cliente VALUES ('André Zacarias', 'a.andrezacarias@gmail','19488832587', '011954152815');
 
 SELECT * FROM Cliente;

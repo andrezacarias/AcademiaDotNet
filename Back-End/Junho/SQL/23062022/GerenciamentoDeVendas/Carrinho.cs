@@ -8,5 +8,7 @@ namespace GerenciamentoDeVendas
 {
     internal class Carrinho
     {
+        
+
     }
 }
