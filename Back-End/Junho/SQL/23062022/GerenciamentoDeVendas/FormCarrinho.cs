@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace GerenciamentoDeVendas
 {
     public partial class FormCarrinho : Form
     {
         public int qtd;
+        public int idenCliente;
         public double precoProduto;
         public double valorT;
         public string nomeProd;
@@ -24,13 +27,14 @@ namespace GerenciamentoDeVendas
             InitializeComponent();
         }
 
-        public FormCarrinho(int qtd, double precoProduto, double valorT, string nomeProd, string idenProduto)
+        public FormCarrinho(int qtd, double precoProduto, double valorT, string nomeProd, string idenProduto, int idenCliente)
         {
             this.qtd = qtd;
             this.precoProduto = precoProduto;
             this.valorT = valorT;
             this.nomeProd = nomeProd;
             this.idenProduto = idenProduto;
+            this.idenCliente = idenCliente;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,9 +54,9 @@ namespace GerenciamentoDeVendas
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int IdenCliente = int.Parse(comboBox1.SelectedValue.ToString());
+            int idenCliente = int.Parse(comboBox1.SelectedValue.ToString());
             MessageBox.Show("Selected Item Text: " + comboBox1.Text + "\n" +
-                           "Index: " + IdenCliente);
+                           "Index: " + idenCliente);
             
             
             
@@ -68,7 +72,7 @@ namespace GerenciamentoDeVendas
             precoProduto = double.Parse(dgListaProdutos.CurrentRow.Cells[2].Value.ToString());
                         
         }
-        //Mostra os dados do produto escolhido já com o valor X quantidade
+        //Mostra os dados do produto escolhido. já com o valor X quantidade
         private void btnComprar_Click(object sender, EventArgs e)
         {
             string nomeProd = dgListaProdutos.CurrentRow.Cells[1].Value.ToString();
@@ -86,7 +90,6 @@ namespace GerenciamentoDeVendas
         {
             string nomeProd = dgListaProdutos.CurrentRow.Cells[1].Value.ToString();
             int idenProduto = int.Parse(dgListaProdutos.CurrentRow.Cells[0].Value.ToString());
-            // IdProduto = idProdutoDataGridViewTextBoxColumn.ToString();
             dgCarrinho.Rows.Add(idenProduto, nomeProd, precoProduto, qtd, valorT);
             //MessageBox.Show(nomeProduto + "\n" + precoProduto + "\n" + qtd + "\n" + valorT);
             
@@ -107,6 +110,39 @@ namespace GerenciamentoDeVendas
             }
             MessageBox.Show($" {IdenCliente}");
             tbTotal.Text = Convert.ToDouble(totalCompra).ToString();
+        }
+        public bool gravarCarrinho()
+        {
+            Banco banco = new Banco();
+            SqlConnection cn = banco.abrirConexao();
+            SqlTransaction tran = cn.BeginTransaction();
+            SqlCommand command = new SqlCommand();
+            command.Connection = cn;
+            command.Transaction = tran;
+            command.CommandType = CommandType.Text;
+            command.CommandText = "insert into vendas values ( @codigoCliente, @valorTotal);";
+            command.Parameters.Add("@idVendas", SqlDbType.Int);
+            command.Parameters.Add("@codigoCliente", SqlDbType.Int);
+            command.Parameters.Add("@valorTotal", SqlDbType.Int);
+            command.Parameters[0].Value = idenCliente;
+            command.Parameters[1].Value = valorTotal;
+
+            try
+            {
+                command.ExecuteNonQuery();
+                tran.Commit();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                tran.Rollback();
+                return false;
+            }
+            finally
+            {
+                banco.fecharConexao();
+            }
         }
     }
 }
