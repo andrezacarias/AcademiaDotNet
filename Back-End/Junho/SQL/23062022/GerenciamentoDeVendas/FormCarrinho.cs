@@ -58,7 +58,7 @@ namespace GerenciamentoDeVendas
             
         }
 
-
+        //Seleciona o produto, valor unitário e a identidade no DB clicando 
         private void dgListaProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int idenProduto = int.Parse(dgListaProdutos.CurrentRow.Cells[0].Value.ToString());
@@ -66,14 +66,9 @@ namespace GerenciamentoDeVendas
             qtd = int.Parse(tbQuantidade.Text);
             valorT = qtd * precoProduto;
             precoProduto = double.Parse(dgListaProdutos.CurrentRow.Cells[2].Value.ToString());
-            //MessageBox.Show("idProduto: " + idenProduto +
-            //                "\nNome: " + nomeProd +
-            //                "\nPreço: " + precoProduto+
-            //                "\nQuantidade: " + qtd
-            //               +"\nValor Total: " + valorT);
-            
+                        
         }
-
+        //Mostra os dados do produto escolhido já com o valor X quantidade
         private void btnComprar_Click(object sender, EventArgs e)
         {
             string nomeProd = dgListaProdutos.CurrentRow.Cells[1].Value.ToString();
@@ -85,10 +80,8 @@ namespace GerenciamentoDeVendas
                             "\nPreço: " + precoProduto + 
                             "\nQuantidade: " + qtd 
                           + "\nValor Total: " + valorT) ;
-            
-
         }
-
+        //Grava no DataGrid os valores de cada item a quantidade e o valor
         private void btnFinalizar_Click(object sender, EventArgs e)
         {
             string nomeProd = dgListaProdutos.CurrentRow.Cells[1].Value.ToString();
@@ -98,6 +91,22 @@ namespace GerenciamentoDeVendas
             //MessageBox.Show(nomeProduto + "\n" + precoProduto + "\n" + qtd + "\n" + valorT);
             
            
+        }
+
+        private void btnTotal_Click(object sender, EventArgs e)
+        {
+            int IdenCliente = int.Parse(comboBox1.SelectedValue.ToString());
+            float totalCompra=0;
+
+            foreach (DataGridViewRow linha in dgCarrinho.Rows)
+            {
+                
+                float valorVendaItem = float.Parse(linha.Cells[4].Value.ToString());
+                totalCompra = totalCompra + valorVendaItem;
+
+            }
+            MessageBox.Show($" {IdenCliente}");
+            tbTotal.Text = Convert.ToDouble(totalCompra).ToString();
         }
     }
 }

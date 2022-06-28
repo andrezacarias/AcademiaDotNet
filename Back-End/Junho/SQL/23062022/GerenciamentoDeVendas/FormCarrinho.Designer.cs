@@ -34,6 +34,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rhinoStore_DBDataSet5 = new GerenciamentoDeVendas.RhinoStore_DBDataSet5();
+            this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.rhinoStore_DBDataSet26 = new GerenciamentoDeVendas.RhinoStore_DBDataSet26();
             this.clientesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.rhinoStore_DBDataSet13 = new GerenciamentoDeVendas.RhinoStore_DBDataSet13();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -42,6 +44,11 @@
             this.rhinoStore_DBDataSet6 = new GerenciamentoDeVendas.RhinoStore_DBDataSet6();
             this.label1 = new System.Windows.Forms.Label();
             this.dgCarrinho = new System.Windows.Forms.DataGridView();
+            this.IdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vendasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.rhinoStore_DBDataSet20 = new GerenciamentoDeVendas.RhinoStore_DBDataSet20();
             this.itensVendidosBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,6 +70,11 @@
             this.vendasTableAdapter1 = new GerenciamentoDeVendas.RhinoStore_DBDataSet19TableAdapters.vendasTableAdapter();
             this.vendasTableAdapter2 = new GerenciamentoDeVendas.RhinoStore_DBDataSet20TableAdapters.vendasTableAdapter();
             this.dgListaProdutos = new System.Windows.Forms.DataGridView();
+            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.rhinoStore_DBDataSet25 = new GerenciamentoDeVendas.RhinoStore_DBDataSet25();
             this.produtosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.rhinoStore_DBDataSet21 = new GerenciamentoDeVendas.RhinoStore_DBDataSet21();
             this.produtosTableAdapter1 = new GerenciamentoDeVendas.RhinoStore_DBDataSet21TableAdapters.produtosTableAdapter();
@@ -78,24 +90,15 @@
             this.rhinoStore_DBDataSet24 = new GerenciamentoDeVendas.RhinoStore_DBDataSet24();
             this.produtosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter4 = new GerenciamentoDeVendas.RhinoStore_DBDataSet24TableAdapters.produtosTableAdapter();
-            this.rhinoStore_DBDataSet25 = new GerenciamentoDeVendas.RhinoStore_DBDataSet25();
-            this.produtosBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter5 = new GerenciamentoDeVendas.RhinoStore_DBDataSet25TableAdapters.produtosTableAdapter();
-            this.rhinoStore_DBDataSet26 = new GerenciamentoDeVendas.RhinoStore_DBDataSet26();
-            this.clientesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.clientesTableAdapter2 = new GerenciamentoDeVendas.RhinoStore_DBDataSet26TableAdapters.ClientesTableAdapter();
-            this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomeProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.tbTotal = new System.Windows.Forms.TextBox();
+            this.btnTotal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
@@ -113,6 +116,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaProdutos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStoreDBDataSet1BindingSource)).BeginInit();
@@ -122,29 +127,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(461, 76);
+            this.btnComprar.Location = new System.Drawing.Point(461, 94);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(75, 23);
+            this.btnComprar.Size = new System.Drawing.Size(75, 40);
             this.btnComprar.TabIndex = 0;
-            this.btnComprar.Text = "COMPRAR";
+            this.btnComprar.Text = "VERIFICAR SUB-TOTAL";
             this.btnComprar.UseVisualStyleBackColor = true;
             this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(461, 125);
+            this.btnFinalizar.Location = new System.Drawing.Point(461, 141);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
             this.btnFinalizar.TabIndex = 1;
-            this.btnFinalizar.Text = "FINALIZAR";
+            this.btnFinalizar.Text = "ADICIONAR";
             this.btnFinalizar.UseVisualStyleBackColor = true;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
@@ -154,7 +155,7 @@
             this.comboBox1.DataSource = this.clientesBindingSource2;
             this.comboBox1.DisplayMember = "nome";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(95, 70);
+            this.comboBox1.Location = new System.Drawing.Point(90, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(237, 21);
             this.comboBox1.TabIndex = 2;
@@ -170,6 +171,16 @@
             // 
             this.rhinoStore_DBDataSet5.DataSetName = "RhinoStore_DBDataSet5";
             this.rhinoStore_DBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesBindingSource2
+            // 
+            this.clientesBindingSource2.DataMember = "Clientes";
+            this.clientesBindingSource2.DataSource = this.rhinoStore_DBDataSet26;
+            // 
+            // rhinoStore_DBDataSet26
+            // 
+            this.rhinoStore_DBDataSet26.DataSetName = "RhinoStore_DBDataSet26";
+            this.rhinoStore_DBDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // clientesBindingSource1
             // 
@@ -212,6 +223,7 @@
             // 
             // dgCarrinho
             // 
+            this.dgCarrinho.AllowUserToAddRows = false;
             this.dgCarrinho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCarrinho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdProduto,
@@ -223,6 +235,35 @@
             this.dgCarrinho.Name = "dgCarrinho";
             this.dgCarrinho.Size = new System.Drawing.Size(528, 183);
             this.dgCarrinho.TabIndex = 6;
+            // 
+            // IdProduto
+            // 
+            this.IdProduto.HeaderText = "IdProduto";
+            this.IdProduto.Name = "IdProduto";
+            this.IdProduto.Width = 60;
+            // 
+            // nomeProduto
+            // 
+            this.nomeProduto.HeaderText = "Nome Produto";
+            this.nomeProduto.Name = "nomeProduto";
+            this.nomeProduto.Width = 160;
+            // 
+            // valorUnitario
+            // 
+            this.valorUnitario.HeaderText = "Valor Unitário";
+            this.valorUnitario.Name = "valorUnitario";
+            // 
+            // quantidade
+            // 
+            this.quantidade.HeaderText = "Quantidade";
+            this.quantidade.Name = "quantidade";
+            this.quantidade.Width = 75;
+            // 
+            // valorTotal
+            // 
+            this.valorTotal.HeaderText = "Sub Total";
+            this.valorTotal.Name = "valorTotal";
+            this.valorTotal.Width = 90;
             // 
             // vendasBindingSource2
             // 
@@ -247,7 +288,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(407, 186);
+            this.label3.Location = new System.Drawing.Point(407, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 7;
@@ -255,7 +296,7 @@
             // 
             // tbQuantidade
             // 
-            this.tbQuantidade.Location = new System.Drawing.Point(478, 183);
+            this.tbQuantidade.Location = new System.Drawing.Point(478, 207);
             this.tbQuantidade.Name = "tbQuantidade";
             this.tbQuantidade.Size = new System.Drawing.Size(58, 20);
             this.tbQuantidade.TabIndex = 8;
@@ -336,6 +377,7 @@
             // dgListaProdutos
             // 
             this.dgListaProdutos.AllowDrop = true;
+            this.dgListaProdutos.AllowUserToAddRows = false;
             this.dgListaProdutos.AllowUserToOrderColumns = true;
             this.dgListaProdutos.AutoGenerateColumns = false;
             this.dgListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -349,6 +391,35 @@
             this.dgListaProdutos.Size = new System.Drawing.Size(346, 164);
             this.dgListaProdutos.TabIndex = 12;
             this.dgListaProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaProdutos_CellContentClick);
+            // 
+            // idProdutoDataGridViewTextBoxColumn
+            // 
+            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "idProduto";
+            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "idProduto";
+            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
+            this.idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nome
+            // 
+            this.nome.DataPropertyName = "nome";
+            this.nome.HeaderText = "nome";
+            this.nome.Name = "nome";
+            // 
+            // preco
+            // 
+            this.preco.DataPropertyName = "preco";
+            this.preco.HeaderText = "preco";
+            this.preco.Name = "preco";
+            // 
+            // produtosBindingSource5
+            // 
+            this.produtosBindingSource5.DataMember = "produtos";
+            this.produtosBindingSource5.DataSource = this.rhinoStore_DBDataSet25;
+            // 
+            // rhinoStore_DBDataSet25
+            // 
+            this.rhinoStore_DBDataSet25.DataSetName = "RhinoStore_DBDataSet25";
+            this.rhinoStore_DBDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // produtosBindingSource1
             // 
@@ -425,87 +496,19 @@
             // 
             this.produtosTableAdapter4.ClearBeforeFill = true;
             // 
-            // rhinoStore_DBDataSet25
-            // 
-            this.rhinoStore_DBDataSet25.DataSetName = "RhinoStore_DBDataSet25";
-            this.rhinoStore_DBDataSet25.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produtosBindingSource5
-            // 
-            this.produtosBindingSource5.DataMember = "produtos";
-            this.produtosBindingSource5.DataSource = this.rhinoStore_DBDataSet25;
-            // 
             // produtosTableAdapter5
             // 
             this.produtosTableAdapter5.ClearBeforeFill = true;
-            // 
-            // rhinoStore_DBDataSet26
-            // 
-            this.rhinoStore_DBDataSet26.DataSetName = "RhinoStore_DBDataSet26";
-            this.rhinoStore_DBDataSet26.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource2
-            // 
-            this.clientesBindingSource2.DataMember = "Clientes";
-            this.clientesBindingSource2.DataSource = this.rhinoStore_DBDataSet26;
             // 
             // clientesTableAdapter2
             // 
             this.clientesTableAdapter2.ClearBeforeFill = true;
             // 
-            // idProdutoDataGridViewTextBoxColumn
-            // 
-            this.idProdutoDataGridViewTextBoxColumn.DataPropertyName = "idProduto";
-            this.idProdutoDataGridViewTextBoxColumn.HeaderText = "idProduto";
-            this.idProdutoDataGridViewTextBoxColumn.Name = "idProdutoDataGridViewTextBoxColumn";
-            this.idProdutoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nome
-            // 
-            this.nome.DataPropertyName = "nome";
-            this.nome.HeaderText = "nome";
-            this.nome.Name = "nome";
-            // 
-            // preco
-            // 
-            this.preco.DataPropertyName = "preco";
-            this.preco.HeaderText = "preco";
-            this.preco.Name = "preco";
-            // 
-            // IdProduto
-            // 
-            this.IdProduto.HeaderText = "IdProduto";
-            this.IdProduto.Name = "IdProduto";
-            this.IdProduto.Width = 60;
-            // 
-            // nomeProduto
-            // 
-            this.nomeProduto.HeaderText = "Nome Produto";
-            this.nomeProduto.Name = "nomeProduto";
-            this.nomeProduto.Width = 160;
-            // 
-            // valorUnitario
-            // 
-            this.valorUnitario.HeaderText = "Valor Unitário";
-            this.valorUnitario.Name = "valorUnitario";
-            // 
-            // quantidade
-            // 
-            this.quantidade.HeaderText = "Quantidade";
-            this.quantidade.Name = "quantidade";
-            this.quantidade.Width = 75;
-            // 
-            // valorTotal
-            // 
-            this.valorTotal.HeaderText = "Sub Total";
-            this.valorTotal.Name = "valorTotal";
-            this.valorTotal.Width = 90;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(409, 240);
+            this.label2.Location = new System.Drawing.Point(409, 250);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 16);
             this.label2.TabIndex = 14;
@@ -513,15 +516,26 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(410, 259);
+            this.tbTotal.Location = new System.Drawing.Point(410, 269);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(126, 20);
             this.tbTotal.TabIndex = 15;
+            // 
+            // btnTotal
+            // 
+            this.btnTotal.Location = new System.Drawing.Point(461, 170);
+            this.btnTotal.Name = "btnTotal";
+            this.btnTotal.Size = new System.Drawing.Size(75, 23);
+            this.btnTotal.TabIndex = 16;
+            this.btnTotal.Text = "TOTAL";
+            this.btnTotal.UseVisualStyleBackColor = true;
+            this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
             // 
             // FormCarrinho
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(592, 561);
+            this.Controls.Add(this.btnTotal);
             this.Controls.Add(this.tbTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
@@ -541,6 +555,8 @@
             this.Load += new System.EventHandler(this.FormCarrinho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
@@ -558,6 +574,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgListaProdutos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStoreDBDataSet1BindingSource)).EndInit();
@@ -567,10 +585,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -643,5 +657,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn valorTotal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbTotal;
+        private System.Windows.Forms.Button btnTotal;
     }
 }
