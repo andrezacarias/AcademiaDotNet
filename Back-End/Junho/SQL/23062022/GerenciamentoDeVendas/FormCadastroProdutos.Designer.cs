@@ -29,19 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblIdProdutos = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbIdProduto = new System.Windows.Forms.TextBox();
             this.tbCodEAN = new System.Windows.Forms.TextBox();
             this.tbNomeProduto = new System.Windows.Forms.TextBox();
             this.tbPreco = new System.Windows.Forms.TextBox();
             this.tbEstoque = new System.Windows.Forms.TextBox();
             this.lblCadastroProdutos = new System.Windows.Forms.Label();
             this.btnCadastrarProduto = new System.Windows.Forms.Button();
-            this.btnApagarProduto = new System.Windows.Forms.Button();
             this.rhinoStore_DBDataSet7 = new GerenciamentoDeVendas.RhinoStore_DBDataSet7();
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter = new GerenciamentoDeVendas.RhinoStore_DBDataSet7TableAdapters.produtosTableAdapter();
@@ -58,14 +55,14 @@
             this.produtosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.produtosTableAdapter3 = new GerenciamentoDeVendas.RhinoStore_DBDataSet11TableAdapters.produtosTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rhinoStore_DBDataSet12 = new GerenciamentoDeVendas.RhinoStore_DBDataSet12();
-            this.produtosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.produtosTableAdapter4 = new GerenciamentoDeVendas.RhinoStore_DBDataSet12TableAdapters.produtosTableAdapter();
             this.idProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codEANDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.rhinoStore_DBDataSet12 = new GerenciamentoDeVendas.RhinoStore_DBDataSet12();
+            this.produtosTableAdapter4 = new GerenciamentoDeVendas.RhinoStore_DBDataSet12TableAdapters.produtosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource2)).BeginInit();
@@ -77,23 +74,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet12)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblIdProdutos
-            // 
-            this.lblIdProdutos.AutoSize = true;
-            this.lblIdProdutos.Location = new System.Drawing.Point(28, 64);
-            this.lblIdProdutos.Name = "lblIdProdutos";
-            this.lblIdProdutos.Size = new System.Drawing.Size(59, 13);
-            this.lblIdProdutos.TabIndex = 0;
-            this.lblIdProdutos.Text = "Id Produto:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 101);
+            this.label2.Location = new System.Drawing.Point(31, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 1;
@@ -102,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 131);
+            this.label3.Location = new System.Drawing.Point(31, 98);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 2;
@@ -111,7 +99,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 163);
+            this.label4.Location = new System.Drawing.Point(34, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 3;
@@ -120,43 +108,36 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(34, 200);
+            this.label5.Location = new System.Drawing.Point(39, 188);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Estoque:";
             // 
-            // tbIdProduto
-            // 
-            this.tbIdProduto.Location = new System.Drawing.Point(130, 64);
-            this.tbIdProduto.Name = "tbIdProduto";
-            this.tbIdProduto.Size = new System.Drawing.Size(210, 20);
-            this.tbIdProduto.TabIndex = 5;
-            // 
             // tbCodEAN
             // 
-            this.tbCodEAN.Location = new System.Drawing.Point(130, 101);
+            this.tbCodEAN.Location = new System.Drawing.Point(130, 64);
             this.tbCodEAN.Name = "tbCodEAN";
             this.tbCodEAN.Size = new System.Drawing.Size(210, 20);
             this.tbCodEAN.TabIndex = 6;
             // 
             // tbNomeProduto
             // 
-            this.tbNomeProduto.Location = new System.Drawing.Point(130, 131);
+            this.tbNomeProduto.Location = new System.Drawing.Point(130, 98);
             this.tbNomeProduto.Name = "tbNomeProduto";
             this.tbNomeProduto.Size = new System.Drawing.Size(210, 20);
             this.tbNomeProduto.TabIndex = 7;
             // 
             // tbPreco
             // 
-            this.tbPreco.Location = new System.Drawing.Point(130, 163);
+            this.tbPreco.Location = new System.Drawing.Point(130, 139);
             this.tbPreco.Name = "tbPreco";
             this.tbPreco.Size = new System.Drawing.Size(210, 20);
             this.tbPreco.TabIndex = 8;
             // 
             // tbEstoque
             // 
-            this.tbEstoque.Location = new System.Drawing.Point(130, 200);
+            this.tbEstoque.Location = new System.Drawing.Point(130, 185);
             this.tbEstoque.Name = "tbEstoque";
             this.tbEstoque.Size = new System.Drawing.Size(210, 20);
             this.tbEstoque.TabIndex = 9;
@@ -180,15 +161,6 @@
             this.btnCadastrarProduto.Text = "CADASTRAR PRODUTO";
             this.btnCadastrarProduto.UseVisualStyleBackColor = true;
             this.btnCadastrarProduto.Click += new System.EventHandler(this.btnCadastrarProduto_Click);
-            // 
-            // btnApagarProduto
-            // 
-            this.btnApagarProduto.Location = new System.Drawing.Point(412, 169);
-            this.btnApagarProduto.Name = "btnApagarProduto";
-            this.btnApagarProduto.Size = new System.Drawing.Size(87, 51);
-            this.btnApagarProduto.TabIndex = 13;
-            this.btnApagarProduto.Text = "APAGAR";
-            this.btnApagarProduto.UseVisualStyleBackColor = true;
             // 
             // rhinoStore_DBDataSet7
             // 
@@ -262,6 +234,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -275,20 +248,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 256);
             this.dataGridView1.TabIndex = 14;
-            // 
-            // rhinoStore_DBDataSet12
-            // 
-            this.rhinoStore_DBDataSet12.DataSetName = "RhinoStore_DBDataSet12";
-            this.rhinoStore_DBDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produtosBindingSource4
-            // 
-            this.produtosBindingSource4.DataMember = "produtos";
-            this.produtosBindingSource4.DataSource = this.rhinoStore_DBDataSet12;
-            // 
-            // produtosTableAdapter4
-            // 
-            this.produtosTableAdapter4.ClearBeforeFill = true;
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
@@ -321,24 +280,35 @@
             this.codEANDataGridViewTextBoxColumn.HeaderText = "CodEAN";
             this.codEANDataGridViewTextBoxColumn.Name = "codEANDataGridViewTextBoxColumn";
             // 
+            // produtosBindingSource4
+            // 
+            this.produtosBindingSource4.DataMember = "produtos";
+            this.produtosBindingSource4.DataSource = this.rhinoStore_DBDataSet12;
+            // 
+            // rhinoStore_DBDataSet12
+            // 
+            this.rhinoStore_DBDataSet12.DataSetName = "RhinoStore_DBDataSet12";
+            this.rhinoStore_DBDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produtosTableAdapter4
+            // 
+            this.produtosTableAdapter4.ClearBeforeFill = true;
+            // 
             // FormCadastroProdutos
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(618, 566);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnApagarProduto);
             this.Controls.Add(this.btnCadastrarProduto);
             this.Controls.Add(this.lblCadastroProdutos);
             this.Controls.Add(this.tbEstoque);
             this.Controls.Add(this.tbPreco);
             this.Controls.Add(this.tbNomeProduto);
             this.Controls.Add(this.tbCodEAN);
-            this.Controls.Add(this.tbIdProduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblIdProdutos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroProdutos";
             this.Text = "FormCadastroProdutos";
@@ -354,28 +324,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblIdProdutos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbIdProduto;
         private System.Windows.Forms.TextBox tbCodEAN;
         private System.Windows.Forms.TextBox tbNomeProduto;
         private System.Windows.Forms.TextBox tbPreco;
         private System.Windows.Forms.TextBox tbEstoque;
         private System.Windows.Forms.Label lblCadastroProdutos;
         private System.Windows.Forms.Button btnCadastrarProduto;
-        private System.Windows.Forms.Button btnApagarProduto;
         private RhinoStore_DBDataSet7 rhinoStore_DBDataSet7;
         private System.Windows.Forms.BindingSource produtosBindingSource;
         private RhinoStore_DBDataSet7TableAdapters.produtosTableAdapter produtosTableAdapter;

@@ -96,6 +96,7 @@
             this.tbTotal = new System.Windows.Forms.TextBox();
             this.btnTotal = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnGravarCompra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource2)).BeginInit();
@@ -132,9 +133,9 @@
             // 
             // btnComprar
             // 
-            this.btnComprar.Location = new System.Drawing.Point(461, 75);
+            this.btnComprar.Location = new System.Drawing.Point(388, 101);
             this.btnComprar.Name = "btnComprar";
-            this.btnComprar.Size = new System.Drawing.Size(86, 59);
+            this.btnComprar.Size = new System.Drawing.Size(89, 59);
             this.btnComprar.TabIndex = 0;
             this.btnComprar.Text = "VERIFICAR SUB-TOTAL";
             this.btnComprar.UseVisualStyleBackColor = true;
@@ -142,9 +143,9 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(461, 141);
+            this.btnFinalizar.Location = new System.Drawing.Point(483, 101);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(86, 23);
+            this.btnFinalizar.Size = new System.Drawing.Size(77, 23);
             this.btnFinalizar.TabIndex = 1;
             this.btnFinalizar.Text = "ADICIONAR";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -289,7 +290,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(430, 230);
+            this.label3.Location = new System.Drawing.Point(418, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 7;
@@ -297,7 +298,7 @@
             // 
             // tbQuantidade
             // 
-            this.tbQuantidade.Location = new System.Drawing.Point(501, 227);
+            this.tbQuantidade.Location = new System.Drawing.Point(489, 186);
             this.tbQuantidade.Name = "tbQuantidade";
             this.tbQuantidade.Size = new System.Drawing.Size(58, 20);
             this.tbQuantidade.TabIndex = 8;
@@ -387,11 +388,13 @@
             this.nome,
             this.preco});
             this.dgListaProdutos.DataSource = this.produtosBindingSource5;
-            this.dgListaProdutos.Location = new System.Drawing.Point(32, 141);
+            this.dgListaProdutos.Location = new System.Drawing.Point(32, 126);
             this.dgListaProdutos.Name = "dgListaProdutos";
-            this.dgListaProdutos.Size = new System.Drawing.Size(346, 164);
+            this.dgListaProdutos.Size = new System.Drawing.Size(343, 164);
             this.dgListaProdutos.TabIndex = 12;
+            this.dgListaProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaProdutos_CellContentClick);
             this.dgListaProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaProdutos_CellContentClick);
+            this.dgListaProdutos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgListaProdutos_CellContentClick);
             // 
             // idProdutoDataGridViewTextBoxColumn
             // 
@@ -440,7 +443,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(42, 122);
+            this.label6.Location = new System.Drawing.Point(42, 107);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 16);
             this.label6.TabIndex = 13;
@@ -509,7 +512,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(432, 270);
+            this.label2.Location = new System.Drawing.Point(434, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 16);
             this.label2.TabIndex = 14;
@@ -517,16 +520,16 @@
             // 
             // tbTotal
             // 
-            this.tbTotal.Location = new System.Drawing.Point(433, 289);
+            this.tbTotal.Location = new System.Drawing.Point(435, 243);
             this.tbTotal.Name = "tbTotal";
             this.tbTotal.Size = new System.Drawing.Size(126, 20);
             this.tbTotal.TabIndex = 15;
             // 
             // btnTotal
             // 
-            this.btnTotal.Location = new System.Drawing.Point(461, 170);
+            this.btnTotal.Location = new System.Drawing.Point(483, 137);
             this.btnTotal.Name = "btnTotal";
-            this.btnTotal.Size = new System.Drawing.Size(86, 23);
+            this.btnTotal.Size = new System.Drawing.Size(77, 23);
             this.btnTotal.TabIndex = 16;
             this.btnTotal.Text = "TOTAL";
             this.btnTotal.UseVisualStyleBackColor = true;
@@ -536,16 +539,28 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(402, 289);
+            this.label7.Location = new System.Drawing.Point(404, 244);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(25, 15);
             this.label7.TabIndex = 17;
             this.label7.Text = "R$";
             // 
+            // btnGravarCompra
+            // 
+            this.btnGravarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGravarCompra.Location = new System.Drawing.Point(435, 283);
+            this.btnGravarCompra.Name = "btnGravarCompra";
+            this.btnGravarCompra.Size = new System.Drawing.Size(125, 35);
+            this.btnGravarCompra.TabIndex = 18;
+            this.btnGravarCompra.Text = "GRAVAR COMPRA";
+            this.btnGravarCompra.UseVisualStyleBackColor = true;
+            this.btnGravarCompra.Click += new System.EventHandler(this.btnGravarCompra_Click);
+            // 
             // FormCarrinho
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(592, 561);
+            this.Controls.Add(this.btnGravarCompra);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnTotal);
             this.Controls.Add(this.tbTotal);
@@ -671,5 +686,6 @@
         private System.Windows.Forms.TextBox tbTotal;
         private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnGravarCompra;
     }
 }

@@ -20,6 +20,7 @@ namespace GerenciamentoDeVendas
         public double valorT;
         public string nomeProd;
         public string idenProduto;
+        public float totalCompra;
 
 
         public FormCarrinho()
@@ -27,7 +28,7 @@ namespace GerenciamentoDeVendas
             InitializeComponent();
         }
 
-        public FormCarrinho(int qtd, double precoProduto, double valorT, string nomeProd, string idenProduto, int idenCliente)
+        public FormCarrinho(int qtd, double precoProduto, double valorT, string nomeProd, string idenProduto, int idenCliente, float totalCompra)
         {
             this.qtd = qtd;
             this.precoProduto = precoProduto;
@@ -35,6 +36,7 @@ namespace GerenciamentoDeVendas
             this.nomeProd = nomeProd;
             this.idenProduto = idenProduto;
             this.idenCliente = idenCliente;
+            this.totalCompra = totalCompra;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,9 +56,9 @@ namespace GerenciamentoDeVendas
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int idenCliente = int.Parse(comboBox1.SelectedValue.ToString());
-            MessageBox.Show("Selected Item Text: " + comboBox1.Text + "\n" +
-                           "Index: " + idenCliente);
+            idenCliente = int.Parse(comboBox1.SelectedValue.ToString());
+            MessageBox.Show("Cliente: " + comboBox1.Text + "\n" +
+                            "Número: " + idenCliente);
             
             
             
@@ -99,7 +101,7 @@ namespace GerenciamentoDeVendas
         private void btnTotal_Click(object sender, EventArgs e)
         {
             int IdenCliente = int.Parse(comboBox1.SelectedValue.ToString());
-            float totalCompra=0;
+            totalCompra=0;
 
             foreach (DataGridViewRow linha in dgCarrinho.Rows)
             {
@@ -108,10 +110,10 @@ namespace GerenciamentoDeVendas
                 totalCompra = totalCompra + valorVendaItem;
 
             }
-            MessageBox.Show($" {IdenCliente}");
+            //MessageBox.Show($" {IdenCliente}");
             tbTotal.Text = Convert.ToDouble(totalCompra).ToString();
         }
-        public bool gravarCarrinho()
+        public bool gravarCompra()
         {
             Banco banco = new Banco();
             SqlConnection cn = banco.abrirConexao();
@@ -121,11 +123,10 @@ namespace GerenciamentoDeVendas
             command.Transaction = tran;
             command.CommandType = CommandType.Text;
             command.CommandText = "insert into vendas values ( @codigoCliente, @valorTotal);";
-            command.Parameters.Add("@idVendas", SqlDbType.Int);
             command.Parameters.Add("@codigoCliente", SqlDbType.Int);
-            command.Parameters.Add("@valorTotal", SqlDbType.Int);
+            command.Parameters.Add("@valorTotal", SqlDbType.Float);
             command.Parameters[0].Value = idenCliente;
-            command.Parameters[1].Value = valorTotal;
+            command.Parameters[1].Value = totalCompra;
 
             try
             {
@@ -143,6 +144,11 @@ namespace GerenciamentoDeVendas
             {
                 banco.fecharConexao();
             }
+        }
+
+        private void btnGravarCompra_Click(object sender, EventArgs e)
+        {
+            gravarCompra();
         }
     }
 }

@@ -45,7 +45,6 @@
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnApagarCliente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rhinoStore_DBDataSet15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
@@ -92,6 +91,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(494, 190);
             this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // rhinoStore_DBDataSet15
             // 
@@ -176,20 +176,10 @@
             this.telefoneDataGridViewTextBoxColumn.HeaderText = "telefone";
             this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
             // 
-            // btnApagarCliente
-            // 
-            this.btnApagarCliente.Location = new System.Drawing.Point(419, 386);
-            this.btnApagarCliente.Name = "btnApagarCliente";
-            this.btnApagarCliente.Size = new System.Drawing.Size(112, 52);
-            this.btnApagarCliente.TabIndex = 11;
-            this.btnApagarCliente.Text = "APAGAR";
-            this.btnApagarCliente.UseVisualStyleBackColor = true;
-            // 
             // FormCadastroClientes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(560, 450);
-            this.Controls.Add(this.btnApagarCliente);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbTelefone);
@@ -229,6 +219,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnApagarCliente;
     }
 }

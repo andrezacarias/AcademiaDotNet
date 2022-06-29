@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace GerenciamentoDeVendas
 {
+    //Classe para abrir e fechar a conexão com o DB
     internal class Banco
     {
         //String com o caminho do Banco de Dados

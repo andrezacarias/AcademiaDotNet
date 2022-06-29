@@ -119,7 +119,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Tela01";
-            this.Text = "Gerenciamento de Vendas";
+            this.Text = "Gerenciamento de Vendas Doces Rhino Store";
             this.Load += new System.EventHandler(this.Tela01_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -10,7 +10,7 @@ CREATE TABLE Clientes(
     PRIMARY KEY (idCliente)
 );
 
-INSERT into Clientes VALUES ('Andrï¿½ Zacarias', 'a.andrezacarias@gmail', '011954152815');
+INSERT into Clientes VALUES ('André Zacarias', 'a.andrezacarias@gmail', '011954152815');
 
 
 --Criar tabela Produtos
@@ -33,7 +33,7 @@ CREATE TABLE vendas(
 	FOREIGN KEY (codigoCliente) 
 	REFERENCES Clientes(idCliente)
 );
- 
+
 INSERT into vendas VALUES (2, 5945.00);
 
 SELECT * FROM vendas;
@@ -54,7 +54,7 @@ CREATE TABLE itensVendidos(
 	CONSTRAINT fk_produtoVenda FOREIGN KEY (idProduto) REFERENCES produtos(idProduto)
 );
 
-INSERT into Clientes VALUES ('Andrï¿½ Zacarias', 'a.andrezacarias@gmail', '011954152815');
+INSERT into Clientes VALUES ('André Zacarias', 'a.andrezacarias@gmail', '011954152815');
 
 INSERT into produtos VALUES ('chinelo', 'R$50,00', 100 ,12365448 );
 

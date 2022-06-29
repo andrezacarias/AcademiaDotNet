@@ -73,6 +73,12 @@
     <Compile Include="FormCarrinho.Designer.cs">
       <DependentUpon>FormCarrinho.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPesquisaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPesquisaCompra.Designer.cs">
+      <DependentUpon>FormPesquisaCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,6 +185,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RhinoStore_DBDataSet26.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RhinoStore_DBDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet28.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RhinoStore_DBDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -227,6 +243,9 @@
     <EmbeddedResource Include="FormCarrinho.resx">
       <DependentUpon>FormCarrinho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPesquisaCompra.resx">
+      <DependentUpon>FormPesquisaCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -236,6 +255,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\GerenciamentoDeVendas.RhinoStore_DBDataSet13TableAdapters.ClientesTableAdapter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -464,6 +484,28 @@
     </None>
     <None Include="RhinoStore_DBDataSet26.xss">
       <DependentUpon>RhinoStore_DBDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet27.xsc">
+      <DependentUpon>RhinoStore_DBDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet27.xss">
+      <DependentUpon>RhinoStore_DBDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet28.xsc">
+      <DependentUpon>RhinoStore_DBDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet28.xss">
+      <DependentUpon>RhinoStore_DBDataSet28.xsd</DependentUpon>
     </None>
     <None Include="RhinoStore_DBDataSet3.xsc">
       <DependentUpon>RhinoStore_DBDataSet3.xsd</DependentUpon>

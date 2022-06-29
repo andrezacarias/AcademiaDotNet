@@ -12,3 +12,4 @@ C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVe
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.exe
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.pdb
 C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.FormCarrinho.resources
+C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Junho\SQL\23062022\GerenciamentoDeVendas\obj\Debug\GerenciamentoDeVendas.FormPesquisaCompra.resources

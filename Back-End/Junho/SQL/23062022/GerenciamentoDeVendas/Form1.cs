@@ -83,8 +83,8 @@ namespace GerenciamentoDeVendas
         }
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            Banco c = new Banco();
-            c.abrirConexao();
+            ActiveButton(btnConectar);
+            FormShow(new FormPesquisaCompra());
         }
     }
 }

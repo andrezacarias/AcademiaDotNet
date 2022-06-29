@@ -124,10 +124,60 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RhinoStore_DBDataSet16.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RhinoStore_DBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RhinoStore_DBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RhinoStore_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RhinoStore_DBDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RhinoStore_DBDataSet26.xsd</DependentUpon>
     </Compile>
     <Compile Include="RhinoStore_DBDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -294,6 +344,39 @@
     <None Include="RhinoStore_DBDataSet16.xss">
       <DependentUpon>RhinoStore_DBDataSet16.xsd</DependentUpon>
     </None>
+    <None Include="RhinoStore_DBDataSet17.xsc">
+      <DependentUpon>RhinoStore_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet17.xss">
+      <DependentUpon>RhinoStore_DBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet18.xsc">
+      <DependentUpon>RhinoStore_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet18.xss">
+      <DependentUpon>RhinoStore_DBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet19.xsc">
+      <DependentUpon>RhinoStore_DBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet19.xss">
+      <DependentUpon>RhinoStore_DBDataSet19.xsd</DependentUpon>
+    </None>
     <None Include="RhinoStore_DBDataSet2.xsc">
       <DependentUpon>RhinoStore_DBDataSet2.xsd</DependentUpon>
     </None>
@@ -304,6 +387,83 @@
     </None>
     <None Include="RhinoStore_DBDataSet2.xss">
       <DependentUpon>RhinoStore_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet20.xsc">
+      <DependentUpon>RhinoStore_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet20.xss">
+      <DependentUpon>RhinoStore_DBDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet21.xsc">
+      <DependentUpon>RhinoStore_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet21.xss">
+      <DependentUpon>RhinoStore_DBDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet22.xsc">
+      <DependentUpon>RhinoStore_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet22.xss">
+      <DependentUpon>RhinoStore_DBDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet23.xsc">
+      <DependentUpon>RhinoStore_DBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet23.xss">
+      <DependentUpon>RhinoStore_DBDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet24.xsc">
+      <DependentUpon>RhinoStore_DBDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet24.xss">
+      <DependentUpon>RhinoStore_DBDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet25.xsc">
+      <DependentUpon>RhinoStore_DBDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet25.xss">
+      <DependentUpon>RhinoStore_DBDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet26.xsc">
+      <DependentUpon>RhinoStore_DBDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="RhinoStore_DBDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RhinoStore_DBDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RhinoStore_DBDataSet26.xss">
+      <DependentUpon>RhinoStore_DBDataSet26.xsd</DependentUpon>
     </None>
     <None Include="RhinoStore_DBDataSet3.xsc">
       <DependentUpon>RhinoStore_DBDataSet3.xsd</DependentUpon>
