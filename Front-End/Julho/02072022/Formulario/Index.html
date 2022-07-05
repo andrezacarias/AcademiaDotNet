@@ -8,18 +8,24 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>FORMULÁRIO DESAFIO.</title>
+    <script defer src="main.js"></script>
 </head>
-<head><H1><strong><center>FORMULÁRIO DESAFIO</center></strong></H1></head>
-<p><center><h3> Este formulário não grava dados.</h3></center></p>
+<head><H1><strong><center>FORMULÁRIO DESAFIO</center></strong></H1>
+<p><center><h3>Este formulário não grava dados.</h3></center></p>
+</head>
 <body>
-<div class = "container-fluid-sm border-primary pt-5">
+<main>
+<div class = "container-md pt-5">
+    <form id="formulario">
+    <p><h3><b>Informações Pessoais:</b></h3></p>
+    <br>
     <div class ="row border1">
         <div class="col">
-            <label for ="entradaNome" class="form-label"><h4>Nome:</h4></label>
+            <label for ="entradaNome" class="form-label"><h4>Nome:*</h4></label>
             <input type="name" class="form-control" id="Nome">
         </div>
         <div class="col">
-            <label for ="entradaSobreNome" class="form-label"><h4>Sobrenome:</h4></label>
+            <label for ="entradaSobreNome" class="form-label"><h4>Sobrenome:*</h4></label>
             <input type="last-name" class="form-control" id="Sobrenome">
         </div>
     </div>
@@ -30,76 +36,229 @@ integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmV
         </div>
         <div class="col">
                 <label for="login" class="form-label"><h4>Login:</h4></label>
-                <input type="login" class="form-control" id="Login">
+                <input type="login" class="form-control" id="Login" readonly>
         </div>
     </div>
     <div class ="row border3">
         <div class="col">
-            <label for="entradaSenha" class="form-label"><h4>Senha:</h4></label>
+            <label for="entradaSenha" class="form-label"><h4>Senha:*</h4></label>
             <input type="senha" class="form-control" id="Senha">
         </div>
         <div class="col">
-                <label for="endereco" class="form-label"><h4>Endereço:</h4></label>
+                <label for="endereco" class="form-label"><h4>Endereço:*</h4></label>
                 <input type="endereco" class="form-control" id="Endereco">
         </div>
     </div>
     <div class ="row border4">
         <div class="col">
-            <label for="entradaComplemento" class="form-label"><h4>Complemento:</h4></label>
+            <label for="entradaComplemento" class="form-label"><h4>Complemento:*</h4></label>
             <input type="Complemento" class="form-control" id="Complemento">
         </div>
         <div class="col">
-                <label for="Bairro" class="form-label"><h4>Bairro:</h4></label>
+                <label for="Bairro" class="form-label"><h4>Bairro:*</h4></label>
                 <input type="Bairro" class="form-control" id="Bairro">
         </div>
     </div>
     <div class ="row border5">
         <div class="col">
-            <label for="entradaCep" class="form-label"><h4>CEP:</h4></label>
+            <label for="entradaCep" class="form-label"><h4>CEP:*</h4></label>
             <input type="CEP" class="form-control" id="CEP">
         </div>
         <div class="col">
-                <label for="Cidade" class="form-label"><h4>Cidade:</h4></label>
+                <label for="Cidade" class="form-label"><h4>Cidade:*</h4></label>
                 <input type="Cidade" class="form-control" id="Cidade">
         </div>
-    </div>
-    <div class ="row border6">
         <div class="col">
-            <label for="entradaEstado" class="form-label"><h4>Estado:</h4></label>
+            <label for="entradaEstado" class="form-label"><h4>Estado:*</h4></label>
             <input type="Estado" class="form-control" id="Estado">
         </div>
+    </div>
+    <br>
+    <p><h3><b>Informações Profissionais:</b></h3></p>
+    <h6><br></h6>
+    <div class ="row border6 mb-1">
         <div class="col">
                 <label for="perfilGitHub" class="form-label"><h4>Perfil GitHub:</h4></label>
                 <input type="perfilGitHub" class="form-control" id="perfilGitHub">
         </div>
-    </div>
-    <div class ="row inline7">
-        <div class="col-6">
-            <label for="entradaAcademia" class="form-label"><h4>Academia:</h4></label>
-            <select type="Academia" class="form-control" id=Academia>
-            <option><h3>Selecione a Academia:</h3></option>
-            <option>Academia .NET</option>
-            <option>Academia JAVA</option>
-            <option>Academia Tester</option>
+        <div class="col">
+                <label for="entradaAcademia" class="form-label"><h4>Academia:</h4></label>
+                <select type="Academia" class="form-control" id=Academia>
+                <option value=""><h3>Selecione a Academia:</h3></option>
+                <option value="1">Academia .NET</option>
+                <option value="2">Academia JAVA</option>
+                <option value="3">Academia Tester</option>
+                </select>
+            </div> 
+            <div class="col">
+                <label for="entradaMestre" class="form-label"><h4>Mestre:</h4></label>
+                <select type="Mestre" class="form-control" id=Mestre>
+                <option><h3>Selecione o Mestre:</h3></option>
+                <option value="">Alexandre Zamberlan</option>
+                <option value="1">Ricardo Frohlich</option>
+                <option value="2">Deivison Pasa</option>
             </select>
-        </div> 
-    </div>      
-    <div class ="row inline7">
-        <div class="col-6">
-            <label for="entradaMestre" class="form-label"><h4>Mestre:</h4></label>
-            <select type="Mestre" class="form-control" id=Mestre>
-            <option><h3>Selecione o Mestre:</h3></option>
-            <option>Alexandre Zamberlan</option>
-            <option>Ricardo Frohlich</option>
-            <option>Deivison Pasa</option>
-        </select>
-        </div>   
-    </div>    
+            </div>   
+    </div>
+    <div class="form-group">
+        <br>
+              <label for="termosDeAceite"><b><h4>Termos de aceite:</h4></b></label>
+              <textarea class="form-control  p-1 text-dark" id="termosDeAceite" rows="16"
+                style="resize: none">TERMO DE ACEITE PARA TRATAMENTO DE DADOS PESSOAIS
+                Este documento visa registrar a manifestação livre, informada e inequívoca pela qual o usuário concorda com o tratamento
+                de seus dados pessoais para finalidade específica, em conformidade com a Lei nº 13.709 – Lei Geral de Proteção de
+                Dados Pessoais (LGPD).
+                Ao aceitar o presente termo, o usuário consente e concorda que a empresa FACISC – Federação das Associações
+                Empresariais de Santa Catarina, CNPJ nº 78.354.636/0001-29, com sede na Rua Visconde de Cairú, 391 – Bairro Estreito
+                – Florianópolis/SC, telefone (48) 3952.8844, e-mail facisc@facisc.org.br, doravante denominada Controlador, tome
+                decisões referentes ao tratamento de seus dados pessoais, bem como realize o tratamento de seus dados pessoais,
+                envolvendo operações como as que se referem a coleta, produção, recepção, classificação, utilização, acesso,
+                reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle
+                da informação, modificação, comunicação, transferência, difusão ou extração.
+                Dados Pessoais
+                O Controlador fica autorizado a tomar decisões referentes ao tratamento e a realizar o tratamento dos seguintes dados
+                pessoais do Titular:
+                 Nome completo.
+                 ACI que preside.
+                 Número do Cadastro de Pessoas Físicas (CPF).
+                 Endereço de e-mail pessoal
+                 Regional da Facisc a qual a entidade que preside faz parte.
+                 Validade do seu mandado
+                 Seu voto em votações virtuais referente a itens estatutários.
+                Finalidades do Tratamento dos Dados
+                O tratamento dos dados pessoais listados neste termo tem as seguintes finalidades:
+                 Possibilitar que o Controlador identifique e entre em contato com o Titular para fins de relacionamento.
+                 Possibilitar que o Controlador possa dar acesso ao sistema de votação da Facisc.
+                Compartilhamento de Dados
+                O Controlador fica autorizado a compartilhar os dados pessoais do Titular com outros agentes de tratamento de dados,
+                caso seja necessário para as finalidades listadas neste termo, observados os princípios e as garantias estabelecidas pela
+                Lei nº 13.709.
+                Segurança dos Dados
+                O Controlador responsabiliza-se pela manutenção de medidas de segurança, técnicas e administrativas aptas a proteger
+                os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração,
+                comunicação ou qualquer forma de tratamento inadequado ou ilícito.
+                Em conformidade ao art. 48 da Lei nº 13.709, o Controlador comunicará ao Titular e à Autoridade Nacional de Proteção
+                de Dados (ANPD) a ocorrência de incidente de segurança que possa acarretar risco ou dano relevante ao Titular.
+                Término do Tratamento dos Dados
+                O Controlador poderá manter e tratar os dados pessoais do Titular durante todo o período em que os mesmos forem
+                pertinentes ao alcance das finalidades listadas neste termo. Dados pessoais anonimizados, sem possibilidade de
+                associação ao indivíduo, poderão ser mantidos por período indefinido.
+                O Titular poderá solicitar via e-mail ou correspondência ao Controlador, a qualquer momento, que sejam eliminados os
+                dados pessoais não anonimizados do Titular
+                Direitos do Titular
+                O Titular tem direito a obter do Controlador, em relação aos dados por ele tratados, a qualquer momento e mediante
+                requisição: I - confirmação da existência de tratamento; II - acesso aos dados; III - correção de dados incompletos, inexatos
+                ou desatualizados; IV - anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em
+                desconformidade com o disposto na Lei nº 13.709; V - portabilidade dos dados a outro fornecedor de serviço ou produto,
+                mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos
+                comercial e industrial; VI - eliminação dos dados pessoais tratados com o consentimento do titular, exceto nas hipóteses
+                previstas no art. 16 da Lei nº 13.709; VII - informação das entidades públicas e privadas com as quais o controlador realizou
+                uso compartilhado de dados; VIII - informação sobre a possibilidade de não fornecer consentimento e sobre as
+                consequências da negativa; IX - revogação do consentimento, nos termos do § 5º do art. 8º da Lei nº 13.709.
+                Direito de Revogação do Consentimento
+                Este consentimento poderá ser revogado pelo usuário, a qualquer momento, mediante solicitação via e-mail ou
+                correspondência ao Controlador.</textarea>
+            </div>
+            <div class="input-group mb2 mt-3">
+                <div class="Checks">
+                <input type="checkbox" aria-label="idTermo">
+                <label for="exampleFormControlInput1"><b>Eu li e concordo os termos descritos
+                    acima.</b></label>
+                </div>
+            </div>
+                <div class="Checks">
+                <input type="checkbox" aria-label="idNovidade">
+                <label for="exampleFormControlInput1"><b> Desejo receber informações e novidades</b></label>
+                </div>
+             <br><br>    
+            <div class="d-grid gap-3 col-5 mx-auto">
+              <input class="btn btn-primary" type="submit" value="Salvar">
+              <input class="btn btn-primary" type="reset" value="Limpar dados">
+            </div>
+      </div>  
 </div>
+</main>
+<section id="tabela-dados" class="bg-white p-5 mb-5 d-none">
+    <table class="table">
+        <thead>
+            <tr>
+                <th colspan="2">DADOS SUBMETIDOS PELO FORMULÁRIO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Nome</th>
+                <td id="t-nome"></td>
+            </tr>
+            <tr>
+                <th>Sobrenome</th>
+                <td id="t-sobrenome"></td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td id="t-email"></td>
+            </tr>
+            <tr>
+                <th>Login</th>
+                <td id="t-login"></td>
+            </tr>
+            <tr>
+                <th>Senha</th>
+                <td id="t-senha"></td>
+            </tr>
+            <tr>
+                <th>CEP</th>
+                <td id="t-cep"></td>
+            </tr>
+            <tr>
+                <th>Endereço</th>
+                <td id="t-endereco"></td>
+            </tr>
+            <tr>
+                <th>Complemento</th>
+                <td id="t-complemento"></td>
+            </tr>
+            <tr>
+                <th>Bairro</th>
+                <td id="t-bairro"></td>
+            </tr>
+            <tr>
+                <th>Cidade</th>
+                <td id="t-cidade"></td>
+            </tr>
+            <tr>
+                <th>Estado</th>
+                <td id="t-estado"></td>
+            </tr>
+            <tr>
+                <th>GitHub</th>
+                <td id="t-github"></td>
+            </tr>
+            <tr>
+                <th>Academia</th>
+                <td id="t-academia"></td>
+            </tr>
+            <tr>
+                <th>Professor</th>
+                <td id="t-professor"></td>
+            </tr>
+            <tr>
+                <th>Termos legais</th>
+                <td id="t-termos"></td>
+            </tr>
+            <tr>
+                <th>Informativo</th>
+                <td id="t-info"></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</div>
+</body>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-<div class="mb-3">
+<div class="mb-3">-->
     
   </div>
   </body>
