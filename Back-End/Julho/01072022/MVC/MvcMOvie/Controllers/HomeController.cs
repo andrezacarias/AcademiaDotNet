@@ -23,6 +23,26 @@ namespace MvcMOvie.Controllers
             return View();
         }
 
+        public IActionResult Sobre()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Cadastrar(Pessoa p)
+        {
+            string nome = p.Nome;
+            string CPF = p.CPF;
+            return View("Pessoa", p);
+        }
+        public IActionResult Pessoa(Pessoa p)
+        {
+            return View(p);
+        }
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
