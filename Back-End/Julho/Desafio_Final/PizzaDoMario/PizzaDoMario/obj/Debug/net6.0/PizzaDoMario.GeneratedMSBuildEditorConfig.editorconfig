@@ -1,0 +1,104 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PizzaDoMario
+build_property.RootNamespace = PizzaDoMario
+build_property.ProjectDir = C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Julho\Desafio_Final\PizzaDoMario\PizzaDoMario\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pc\Desktop\AcademiaDotNet\Back-End\Julho\Desafio_Final\PizzaDoMario\PizzaDoMario
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroClientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroClientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroClientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroClientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroClientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9DbGllbnRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroProduto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroProduto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroProduto/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroProduto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/CadastroProduto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Vendas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Vendas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Vendas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Vendas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Vendas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/AcademiaDotNet/Back-End/Julho/Desafio_Final/PizzaDoMario/PizzaDoMario/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v34vsfpmis
