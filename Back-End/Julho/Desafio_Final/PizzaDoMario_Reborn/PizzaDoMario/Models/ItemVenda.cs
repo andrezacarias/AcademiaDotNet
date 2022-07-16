@@ -6,7 +6,6 @@ namespace PizzaDoMario.Models
     public class ItemVenda : Venda
     {
         [Key]
-        [Required]
         public int IdItemVenda { get; set; }
         [Required]
         public float valorUnitario { get; set; }

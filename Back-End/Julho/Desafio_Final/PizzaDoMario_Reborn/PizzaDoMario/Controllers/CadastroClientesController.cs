@@ -56,7 +56,7 @@ namespace PizzaDoMario.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCliente,nome,telefone,endereco,complemento,bairro,CEP")] CadastroCliente cadastroCliente)
+        public async Task<IActionResult> Create([Bind("IdCliente,nome,endereco,complemento,bairro,telefone")] CadastroCliente cadastroCliente)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace PizzaDoMario.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCliente,nome,telefone,endereco,complemento,bairro,CEP")] CadastroCliente cadastroCliente)
+        public async Task<IActionResult> Edit(int id, [Bind("IdCliente,nome,endereco,complemento,bairro,telefone")] CadastroCliente cadastroCliente)
         {
             if (id != cadastroCliente.IdCliente)
             {

@@ -19,5 +19,9 @@ namespace PizzaDoMario.Data
         public DbSet<PizzaDoMario.Models.CadastroProduto>? CadastroProduto { get; set; }
 
         public DbSet<PizzaDoMario.Models.Venda>? Venda { get; set; }
+
+        
+
+        
     }
 }

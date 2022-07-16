@@ -30,10 +30,6 @@ namespace PizzaDoMario.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCliente"), 1L, 1);
 
-                    b.Property<string>("CEP")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("bairro")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -56,7 +52,7 @@ namespace PizzaDoMario.Migrations
 
                     b.HasKey("IdCliente");
 
-                    b.ToTable("CadastroCliente", (string)null);
+                    b.ToTable("Cadastro Cliente");
                 });
 
             modelBuilder.Entity("PizzaDoMario.Models.CadastroProduto", b =>
@@ -80,7 +76,7 @@ namespace PizzaDoMario.Migrations
 
                     b.HasKey("IdProduto");
 
-                    b.ToTable("CadastroProduto", (string)null);
+                    b.ToTable("CadastroProduto");
                 });
 
             modelBuilder.Entity("PizzaDoMario.Models.Venda", b =>
@@ -91,18 +87,34 @@ namespace PizzaDoMario.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdVenda"), 1L, 1);
 
-                    b.Property<int>("IdCliente")
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StatusPedido")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("dataCompra")
                         .HasColumnType("datetime2");
 
-                    b.Property<float>("valorTotal")
-                        .HasColumnType("real");
+                    b.Property<decimal>("valorTotal")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("IdVenda");
 
-                    b.ToTable("Venda", (string)null);
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Venda");
+                });
+
+            modelBuilder.Entity("PizzaDoMario.Models.Venda", b =>
+                {
+                    b.HasOne("PizzaDoMario.Models.CadastroCliente", "CadastroCliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CadastroCliente");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,16 +11,17 @@ namespace PizzaDoMario.Models
         [ForeignKey("CadastroCliente")]
         [Display(Name = "Telefone")]
         public int ClienteId { get; set; }
-        public CadastroCliente CadastroCliente { get; set; }
+        public  CadastroCliente CadastroCliente { get; set; }
+
+        [ForeignKey("CadastroProduto")]
+        public int IdProduto { get; set; }
+        public  CadastroProduto CadastroProduto { get; set; }
         public decimal valorTotal { get; set; }
+        [DataType(DataType.Date)]
         public DateTime dataCompra { get; set; }
-        public StatusPedido StatusPedido { get; set; }
-    
-    }
-    public enum StatusPedido
-    {
-        EmAndamento = 1,
-        Finalizado
+        public int quantidade { get; set; }
+        //public List<CadastroProduto> CadastroProdutoList { get; set; }
 
     }
+
 }

@@ -22,9 +22,9 @@ namespace PizzaDoMario.Controllers
         // GET: CadastroProduto
         public async Task<IActionResult> Index()
         {
-              return _context.CadastroProduto != null ? 
-                          View(await _context.CadastroProduto.ToListAsync()) :
-                          Problem("Entity set 'PizzaDoMarioContext.CadastroProduto'  is null.");
+            return _context.CadastroProduto != null ?
+                        View(await _context.CadastroProduto.ToListAsync()) :
+                        Problem("Entity set 'PizzaDoMarioContext.CadastroProduto'  is null.");
         }
 
         // GET: CadastroProduto/Details/5
@@ -48,6 +48,7 @@ namespace PizzaDoMario.Controllers
         // GET: CadastroProduto/Create
         public IActionResult Create()
         {
+           
             return View();
         }
 
@@ -58,12 +59,11 @@ namespace PizzaDoMario.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdProduto,nomeProduto,preco,descricao")] CadastroProduto cadastroProduto)
         {
-            if (ModelState.IsValid)
-            {
+           
                 _context.Add(cadastroProduto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            //ViewData["nomeProduto"] = new SelectList(_context.CadastroProduto, "nomeProduto", "nomeProduto", cadastroProduto.IdProduto);
             return View(cadastroProduto);
         }
 
@@ -95,8 +95,7 @@ namespace PizzaDoMario.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
-            {
+           
                 try
                 {
                     _context.Update(cadastroProduto);
@@ -114,7 +113,7 @@ namespace PizzaDoMario.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
+            
             return View(cadastroProduto);
         }
 

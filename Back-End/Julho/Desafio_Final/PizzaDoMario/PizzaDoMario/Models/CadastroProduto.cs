@@ -12,6 +12,7 @@ namespace PizzaDoMario.Models
         public float preco { get; set; }
         [Required]
         public string descricao { get; set; }
+        //public Venda Venda { get; set; }
 
     }
 }

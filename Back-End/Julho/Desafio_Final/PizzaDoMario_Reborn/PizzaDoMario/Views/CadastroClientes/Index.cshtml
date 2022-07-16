@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.telefone)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.endereco)
             </th>
             <th>
@@ -28,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.bairro)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CEP)
+                @Html.DisplayNameFor(model => model.telefone)
             </th>
             <th></th>
         </tr>
@@ -40,9 +37,6 @@
                 @Html.DisplayFor(modelItem => item.nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.telefone)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.endereco)
             </td>
             <td>
@@ -52,7 +46,7 @@
                 @Html.DisplayFor(modelItem => item.bairro)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CEP)
+                @Html.DisplayFor(modelItem => item.telefone)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdCliente">Edit</a> |

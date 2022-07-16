@@ -90,11 +90,14 @@ namespace PizzaDoMario.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<int>("StatusPedido")
+                    b.Property<int>("IdProduto")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("dataCompra")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("quantidade")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("valorTotal")
                         .HasColumnType("decimal(18,2)");
@@ -102,6 +105,8 @@ namespace PizzaDoMario.Migrations
                     b.HasKey("IdVenda");
 
                     b.HasIndex("ClienteId");
+
+                    b.HasIndex("IdProduto");
 
                     b.ToTable("Venda");
                 });
@@ -114,7 +119,15 @@ namespace PizzaDoMario.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("PizzaDoMario.Models.CadastroProduto", "CadastroProduto")
+                        .WithMany()
+                        .HasForeignKey("IdProduto")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("CadastroCliente");
+
+                    b.Navigation("CadastroProduto");
                 });
 #pragma warning restore 612, 618
         }
