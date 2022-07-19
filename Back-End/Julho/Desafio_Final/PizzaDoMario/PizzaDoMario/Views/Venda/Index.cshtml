@@ -16,16 +16,7 @@
                 @Html.DisplayNameFor(model => model.CadastroCliente)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CadastroProduto)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.valorTotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.dataCompra)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.quantidade)
             </th>
             <th></th>
         </tr>
@@ -37,16 +28,7 @@
                 @Html.DisplayFor(modelItem => item.CadastroCliente.nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CadastroProduto.nomeProduto)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.valorTotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dataCompra)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.quantidade)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdVenda">Edit</a> |

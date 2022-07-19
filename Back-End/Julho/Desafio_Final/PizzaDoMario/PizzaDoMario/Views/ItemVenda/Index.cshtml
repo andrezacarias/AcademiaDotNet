@@ -1,0 +1,65 @@
+﻿@model IEnumerable<PizzaDoMario.Models.ItemVenda>
+
+@{
+    ViewData["Title"] = "Pedido";
+}
+
+<h1>Pedido</h1>
+
+<p>
+    <a asp-action="Create">Novo Pedido</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CadastroCliente.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataCompra)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CadastroCliente.endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CadastroProduto.nomeProduto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroCliente.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.quantidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataCompra)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroCliente.endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroProduto.nomeProduto)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdItemVenda">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdItemVenda">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdItemVenda">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

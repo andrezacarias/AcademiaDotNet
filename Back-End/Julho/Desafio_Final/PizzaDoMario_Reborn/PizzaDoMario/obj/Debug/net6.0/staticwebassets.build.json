@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AU5LlYRS1KSkcEotv7Ndo7wOm7YmW64dm+D7QT5tmls=",
+  "Hash": "4GsrI9yKDcxh9QBa88XepsZEGR5K40OKTvCAYaJylNg=",
   "Source": "PizzaDoMario",
   "BasePath": "_content/PizzaDoMario",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\pc\\Desktop\\AcademiaDotNet\\Back-End\\Julho\\Desafio_Final\\PizzaDoMario_Reborn\\PizzaDoMario\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PizzaDoMario.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\AcademiaDotNet\\Back-End\\Julho\\Desafio_Final\\PizzaDoMario_Reborn\\PizzaDoMario\\wwwroot\\css\\MariosPizza.jpeg",
+      "SourceId": "PizzaDoMario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\AcademiaDotNet\\Back-End\\Julho\\Desafio_Final\\PizzaDoMario_Reborn\\PizzaDoMario\\wwwroot\\",
+      "BasePath": "_content/PizzaDoMario",
+      "RelativePath": "css/MariosPizza.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MariosPizza.jpeg"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\AcademiaDotNet\\Back-End\\Julho\\Desafio_Final\\PizzaDoMario_Reborn\\PizzaDoMario\\wwwroot\\css\\site.css",

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PizzaDoMario.Models.CadastroProduto>
+
+@{
+    ViewData["Title"] = "Cadastro Produto";
+}
+
+<h1>Cadastro Produto</h1>
+
+<p>
+    <a asp-action="Create">Cadastrar Novo</a>
+</p>
+<table class="table" id="tabela">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nomeProduto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomeProduto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descricao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdProduto">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdProduto">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdProduto">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

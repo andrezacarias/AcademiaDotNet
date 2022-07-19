@@ -17,23 +17,9 @@
                 <select asp-for="ClienteId" class ="form-control" asp-items="ViewBag.ClienteId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="IdProduto" class="control-label"></label>
-                <select asp-for="IdProduto" class ="form-control" asp-items="ViewBag.IdProduto"></select>
-            </div>
-            <div class="form-group">
                 <label asp-for="valorTotal" class="control-label"></label>
                 <input asp-for="valorTotal" class="form-control" />
                 <span asp-validation-for="valorTotal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="dataCompra" class="control-label"></label>
-                <input asp-for="dataCompra" class="form-control" />
-                <span asp-validation-for="dataCompra" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="quantidade" class="control-label"></label>
-                <input asp-for="quantidade" class="form-control" />
-                <span asp-validation-for="quantidade" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

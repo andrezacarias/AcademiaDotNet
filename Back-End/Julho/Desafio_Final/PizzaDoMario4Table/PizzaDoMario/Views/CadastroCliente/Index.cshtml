@@ -1,0 +1,59 @@
+﻿@model IEnumerable<PizzaDoMario.Models.CadastroCliente>
+
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<h1>Cadastro de Clientes</h1>
+
+<p>
+    <a asp-action="Create">Cadastrar Novo</a>
+</p>
+<table class="display"  id="tabela">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.complemento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.complemento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCliente">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCliente">Apagar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

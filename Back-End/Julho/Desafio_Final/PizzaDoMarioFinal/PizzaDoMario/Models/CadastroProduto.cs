@@ -7,12 +7,15 @@ namespace PizzaDoMario.Models
         [Key]
         public int IdProduto { get; set; }
         [Required]
+        [Display(Name = "Nome do Produto")]
         public string nomeProduto { get; set; }
         [Required]
-        public float preco { get; set; }
+        [Display(Name = "Preço")]
+        public decimal preco { get; set; }
         [Required]
+        [Display(Name = "Descrição")]
         public string descricao { get; set; }
-        public Venda Venda { get; set; }
+
 
     }
 }
