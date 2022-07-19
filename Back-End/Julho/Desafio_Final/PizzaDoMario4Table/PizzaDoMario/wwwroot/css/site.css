@@ -14,12 +14,12 @@ html {
 }
 
 body {
+    
     margin-bottom: 60px;
     background-image: url(MarioPizza.png);
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center bottom;
-   
-
+    opacity:1.2;
 
 }

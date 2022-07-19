@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<PizzaDoMario.Models.Venda>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Vendas";
 }
 
-<h1>Index</h1>
+<h1>Vendas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar Nova</a>
 </p>
 <table class="table" id="tabela">
     <thead>
@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.valorTotal)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdVenda">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdVenda">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdVenda">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdVenda">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdVenda">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdVenda">Apagar</a>
             </td>
         </tr>
 }
